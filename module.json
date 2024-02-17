@@ -7,10 +7,20 @@
       "name": "Eruestani"
       }
     ],
-    "version": "1.0.0",
+    "version": "0.1.0",
+    "system": ["dnd5e"],
     "compatibility": {
       "minimum": "11",
       "verified": "11"
     },
-    "esmodules": ["onload.js"]
+    "esmodules": ["onload.js"],
+    "relationships": {
+      "systems": [{
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0"
+        }
+      }]
+    }
 }
