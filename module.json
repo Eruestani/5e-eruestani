@@ -1,0 +1,16 @@
+{
+    "id": "eruestani",
+    "title": "5e Eruestani",
+    "description": "A simple module created to adjust the config of the offical 5e system.",
+    "authors": [
+      {
+      "name": "Eruestani"
+      }
+    ],
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11"
+    },
+    "esmodules": ["onload.js"]
+}
