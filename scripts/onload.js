@@ -1,4 +1,5 @@
 Hooks.once("init", () => {
+    /*
     /// Override ability references
     CONFIG.DND5E.abilities.str = {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
@@ -24,6 +25,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.abilities.san = {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
     },
+    */
 
     /// Add new skills
     CONFIG.DND5E.skills.eng = {
@@ -41,6 +43,7 @@ Hooks.once("init", () => {
         icon: "…" // Icon used in favorites on new character sheet
     },
 
+    /*
     /// Override skill references
     CONFIG.DND5E.skills.acr = {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
@@ -114,6 +117,7 @@ Hooks.once("init", () => {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
         icon: "…" // Icon used in favorites on new character sheet
     },
+    */
 
     /// Adds new alignment options
     CONFIG.DND5E.alignments.sg = "Social Good",
@@ -137,9 +141,10 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponProficiencies.exp = "Expert",
     CONFIG.DND5E.weaponProficienciesMap.expertM = "exp",
     CONFIG.DND5E.weaponProficienciesMap.expertR = "exp",
-    CONFIG.DND5E.weaponTypes.expertM = "Expert Martial"
-    CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged"
+    CONFIG.DND5E.weaponTypes.expertM = "Expert Martial",
+    CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged",
 
+    /*
     /// Override weapon references
     CONFIG.DND5E.weaponIds.battleaxe = "",
     CONFIG.DND5E.weaponIds.blowgun = "",
@@ -280,13 +285,15 @@ Hooks.once("init", () => {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
         icon: "…" // Icon used in favorites on new character sheet
     },
+    */
 
-    // Add heavy shields
+    /// Add heavy shields
     CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield",
     CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields",
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH",
 
-    // Override armor references
+    /*
+    /// Override armor references
     CONFIG.DND5E.armorIds.breastplate = "",
     CONFIG.DND5E.armorIds.chainmail = "",
     CONFIG.DND5E.armorIds.chainshirt = "",
@@ -300,10 +307,10 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorIds.splint = "",
     CONFIG.DND5E.armorIds.studded = "",
     
-    // Override shield references
+    /// Override shield references
     CONFIG.DND5E.shieldIds.shield = "",
 
-    // Override class features
+    /// Override class features
     CONFIG.DND5E.featureTypes.class = {
         label: "Class Features",
         subtypes: {
@@ -387,5 +394,7 @@ Hooks.once("init", () => {
     },
     CONFIG.DND5E.featureTypes.superiorHuntersDefense = {
         label: "Battle Maneuver"
-    };
+    }
+    */
+    ;
 });
