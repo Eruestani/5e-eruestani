@@ -2,17 +2,16 @@
   "id": "eruestani",
   "title": "5e Eruestani",
   "description": "A simple module created to adjust the config of the offical 5e system.",
-  "authors": [{
-      "name": "Eruestani"
-  }],
-  "version": "0.1.0",
+  "version": "#{VERSION}#",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
   },
-  "system": [
-    "dnd5e"
-  ],
+  "authors": [{
+      "name": "Eruestani"
+  }],
   "relationships": {
     "systems": [{
       "id": "dnd5e",
@@ -22,12 +21,12 @@
       }
     }]
   },
-  "manifest": "https://raw.githubusercontent.com/Eruestani/5e-eruestani/main/module.json",
-  "url": "https://github.com/Eruestani/5e-eruestani",
-  "bugs": "https://github.com/Eruestani/5e-eruestani/issues",
-  "changelog": "https://github.com/Eruestani/5e-eruestani/commits/main/",
-  "readme": "https://github.com/Eruestani/5e-eruestani/blob/main/README.md",
   "esmodules": [
     "scripts/onload.js"
-  ]
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md"
 }
