@@ -380,11 +380,18 @@ Hooks.once("init", () => {
     CONFIG.DND5E.alignments.se = "Social Evil";
     CONFIG.DND5E.alignments.re = "Rebel Evil";
 
+    /// Add weapon-like weapon proficiency
+    CONFIG.DND5E.weaponProficiencies.weaponlike = "Weapon-Like";
+    CONFIG.DND5E.weaponProficienciesMap.weaponliketM = "weaponlike";
+    CONFIG.DND5E.weaponProficienciesMap.weaponlikeR = "weaponlike";
+    CONFIG.DND5E.weaponTypes.weaponlikeM = "Weapon-Like Melee";
+    CONFIG.DND5E.weaponTypes.weaponlikeR = "Weapon-Like Ranged";
+
     /// Add expert weapon proficiency
     CONFIG.DND5E.weaponProficiencies.exp = "Expert";
     CONFIG.DND5E.weaponProficienciesMap.expertM = "exp";
     CONFIG.DND5E.weaponProficienciesMap.expertR = "exp";
-    CONFIG.DND5E.weaponTypes.expertM = "Expert Martial";
+    CONFIG.DND5E.weaponTypes.expertM = "Expert Melee";
     CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged";
 
     /// Add heavy shields
