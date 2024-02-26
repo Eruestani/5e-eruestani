@@ -25,25 +25,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.abilities.san = {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
     },
-    */
 
-    /// Add new skills
-    CONFIG.DND5E.skills.eng = {
-        label: "Backflip",
-        ability: "int",
-        fullKey: "engineering", // Full key used in enrichers
-        reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
-        icon: "…" // Icon used in favorites on new character sheet
-    },    
-    CONFIG.DND5E.skills.clt = {
-        label: "culture",
-        ability: "int",
-        fullKey: "culture", // Full key used in enrichers
-        reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
-        icon: "…" // Icon used in favorites on new character sheet
-    },
-
-    /*
     /// Override skill references
     CONFIG.DND5E.skills.acr = {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
@@ -117,34 +99,7 @@ Hooks.once("init", () => {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
         icon: "…" // Icon used in favorites on new character sheet
     },
-    */
 
-    /// Adds new alignment options
-    CONFIG.DND5E.alignments.sg = "Social Good",
-    CONFIG.DND5E.alignments.rg = "Rebel Good",
-    CONFIG.DND5E.alignments.lm = "Lawful Moral",
-    CONFIG.DND5E.alignments.sm = "Social Moral",
-    CONFIG.DND5E.alignments.nm = "Neutral Moral",
-    CONFIG.DND5E.alignments.rm = "Rebel Moral",
-    CONFIG.DND5E.alignments.cm = "Chaotic Moral",
-    CONFIG.DND5E.alignments.sn = "Social Neutral",
-    CONFIG.DND5E.alignments.rb = "Rebel Neutral",
-    CONFIG.DND5E.alignments.li = "Lawful Impure",
-    CONFIG.DND5E.alignments.si = "Social Impure",
-    CONFIG.DND5E.alignments.ni = "Neutral Impure",
-    CONFIG.DND5E.alignments.ri = "Rebel Impure",
-    CONFIG.DND5E.alignments.ci = "Chaotic Impure",
-    CONFIG.DND5E.alignments.se = "Social Evil",
-    CONFIG.DND5E.alignments.re = "Rebel Evil",
-
-    /// Add expert weapon proficiency
-    CONFIG.DND5E.weaponProficiencies.exp = "Expert",
-    CONFIG.DND5E.weaponProficienciesMap.expertM = "exp",
-    CONFIG.DND5E.weaponProficienciesMap.expertR = "exp",
-    CONFIG.DND5E.weaponTypes.expertM = "Expert Martial",
-    CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged",
-
-    /*
     /// Override weapon references
     CONFIG.DND5E.weaponIds.battleaxe = "",
     CONFIG.DND5E.weaponIds.blowgun = "",
@@ -285,14 +240,7 @@ Hooks.once("init", () => {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
         icon: "…" // Icon used in favorites on new character sheet
     },
-    */
 
-    /// Add heavy shields
-    CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield",
-    CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields",
-    CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH",
-
-    /*
     /// Override armor references
     CONFIG.DND5E.armorIds.breastplate = "",
     CONFIG.DND5E.armorIds.chainmail = "",
@@ -396,5 +344,50 @@ Hooks.once("init", () => {
         label: "Battle Maneuver"
     }
     */
-    ;
+
+    /// Add new skills
+    CONFIG.DND5E.skills.eng = {
+        label: "Backflip",
+        ability: "int",
+        fullKey: "engineering", // Full key used in enrichers
+        reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
+        icon: "…" // Icon used in favorites on new character sheet
+    },
+    CONFIG.DND5E.skills.clt = {
+        label: "culture",
+        ability: "int",
+        fullKey: "culture", // Full key used in enrichers
+        reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
+        icon: "…" // Icon used in favorites on new character sheet
+    },
+
+    /// Adds new alignment options
+    CONFIG.DND5E.alignments.sg = "Social Good",
+    CONFIG.DND5E.alignments.rg = "Rebel Good",
+    CONFIG.DND5E.alignments.lm = "Lawful Moral",
+    CONFIG.DND5E.alignments.sm = "Social Moral",
+    CONFIG.DND5E.alignments.nm = "Neutral Moral",
+    CONFIG.DND5E.alignments.rm = "Rebel Moral",
+    CONFIG.DND5E.alignments.cm = "Chaotic Moral",
+    CONFIG.DND5E.alignments.sn = "Social Neutral",
+    CONFIG.DND5E.alignments.rb = "Rebel Neutral",
+    CONFIG.DND5E.alignments.li = "Lawful Impure",
+    CONFIG.DND5E.alignments.si = "Social Impure",
+    CONFIG.DND5E.alignments.ni = "Neutral Impure",
+    CONFIG.DND5E.alignments.ri = "Rebel Impure",
+    CONFIG.DND5E.alignments.ci = "Chaotic Impure",
+    CONFIG.DND5E.alignments.se = "Social Evil",
+    CONFIG.DND5E.alignments.re = "Rebel Evil",
+
+    /// Add expert weapon proficiency
+    CONFIG.DND5E.weaponProficiencies.exp = "Expert",
+    CONFIG.DND5E.weaponProficienciesMap.expertM = "exp",
+    CONFIG.DND5E.weaponProficienciesMap.expertR = "exp",
+    CONFIG.DND5E.weaponTypes.expertM = "Expert Martial",
+    CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged",
+
+    /// Add heavy shields
+    CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield",
+    CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields",
+    CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH"
 });
