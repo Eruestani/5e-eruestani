@@ -662,4 +662,18 @@ Hooks.once("init", () => {
         isPhysical: "true"
     };
     CONFIG.DND5E.validProperties.weapon.add("warpglass")
+
+    // Modify encumbrance thresholds
+    CONFIG.DND5E.encumbrance.threshold.encumbered = {
+        imperial: 15,
+        metric: 6.8
+    };
+    CONFIG.DND5E.encumbrance.threshold.heavilyEncumbered = {
+        imperial: 30,
+        metric: 13.6
+    };
+    CONFIG.DND5E.encumbrance.threshold.maximum = {
+        imperial: 45,
+        metric: 20.4
+    };
 });
