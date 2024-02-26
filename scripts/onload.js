@@ -353,6 +353,7 @@ Hooks.once("init", () => {
         reference: "Compendium.my-module…", // UUID of journal entry page for rich tooltips
         icon: "…" // Icon used in favorites on new character sheet
     };
+    
     CONFIG.DND5E.skills.clt = {
         label: "Culture",
         ability: "int",
@@ -392,9 +393,266 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
 
     /// Add new weapon properties
-    CONFIG.DND5E.itemProperties.laser = {
-        label: "Laser",
+    CONFIG.DND5E.itemProperties.accurate = {
+        label: "Accurate"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("accurate");
+
+    CONFIG.DND5E.itemProperties.aerodynamic = {
+        label: "Aerodynamic"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("aerodynamic");
+
+    CONFIG.DND5E.itemProperties.alternateB = {
+        label: "Alternate (B)",
         isPhysical: "true"
     };
-    CONFIG.DND5E.validProperties.weapon.add("laser");
+    CONFIG.DND5E.validProperties.weapon.add("alternateB");
+
+    CONFIG.DND5E.itemProperties.alternateP = {
+        label: "Alternate (P)"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("alternateP");
+
+    CONFIG.DND5E.itemProperties.alternateS = {
+        label: "Alternate (S)"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("alternateS");
+
+    CONFIG.DND5E.itemProperties.ballistic = {
+        label: "ballistic"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("ballistic");
+
+    CONFIG.DND5E.itemProperties.blast = {
+        label: "Blast"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("blast");
+
+    CONFIG.DND5E.itemProperties.breach = {
+        label: "Breach",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("breach");
+
+    CONFIG.DND5E.itemProperties.cruel = {
+        label: "Cruel"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("cruel");
+
+    CONFIG.DND5E.itemProperties.deadly = {
+        label: "Deadly"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("deadly");
+
+    CONFIG.DND5E.itemProperties.defensive = {
+        label: "Defensive"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("defensive");
+
+    CONFIG.DND5E.itemProperties.disarming = {
+        label: "Disarming"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("disarming");
+
+    CONFIG.DND5E.itemProperties.ersatz = {
+        label: "Ersatz"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("ersatz");
+
+    CONFIG.DND5E.itemProperties.fine = {
+        label: "fine"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("fine");
+
+    CONFIG.DND5E.itemProperties.gargantuan = {
+        label: "Gargantuan"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("gargantuan");
+
+    CONFIG.DND5E.itemProperties.handgun = {
+        label: "Handgun"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("handgun");
+
+    CONFIG.DND5E.itemProperties.highcritical = {
+        label: "High Critical"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("highcritical");
+
+    CONFIG.DND5E.itemProperties.huge = {
+        label: "Huge"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("huge");
+
+    CONFIG.DND5E.itemProperties.large = {
+        label: "Large"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("large");
+
+    CONFIG.DND5E.itemProperties.magazine = {
+        label: "Magazine"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("magazine");
+
+    CONFIG.DND5E.itemProperties.masterwork = {
+        label: "Masterwork"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("masterwork");
+
+    CONFIG.DND5E.itemProperties.misfire = {
+        label: "Misfire"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("misfire");
+
+    CONFIG.DND5E.itemProperties.natatorial = {
+        label: "Natatorial"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("natatorial");
+
+    CONFIG.DND5E.itemProperties.tiny = {
+        label: "Tiny"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("tiny");
+
+    CONFIG.DND5E.itemProperties.tripping = {
+        label: "Tripping"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("tripping");
+
+    CONFIG.DND5E.itemProperties.unarmedB = {
+        label: "Unarmed (B)"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("unarmedB");
+
+    CONFIG.DND5E.itemProperties.unarmedP = {
+        label: "Unarmed (P)"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("unarmedP");
+
+    CONFIG.DND5E.itemProperties.unarmedS = {
+        label: "Unarmed (S)"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("unarmedS");
+
+    CONFIG.DND5E.itemProperties.Wounding = {
+        label: "Wounding"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("Wounding");
+
+    /// Add new material properties
+    CONFIG.DND5E.itemProperties.abysium = {
+        label: "Abysium",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("abysium");
+    
+    CONFIG.DND5E.itemProperties.bone = {
+        label: "Bone",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("bone");
+    
+    CONFIG.DND5E.itemProperties.byeshk = {
+        label: "Byeshk",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("byeshk");
+    
+    CONFIG.DND5E.itemProperties.bronze = {
+        label: "Bronze",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("bronze");
+    
+    CONFIG.DND5E.itemProperties.coldiron = {
+        label: "Cold Iron",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("coldiron");
+    
+    CONFIG.DND5E.itemProperties.darkwood = {
+        label: "Darkwood",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("darkwood");
+    
+    CONFIG.DND5E.itemProperties.djezet = {
+        label: "Djezit",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("djezet");
+    
+    CONFIG.DND5E.itemProperties.dragonhide = {
+        label: "Dragonhide",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("dragonhide");
+    
+    CONFIG.DND5E.itemProperties.grisantianhide = {
+        label: "Grisantian Hide",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("grisantianhide");
+    
+    CONFIG.DND5E.itemProperties.inubrix = {
+        label: "Inubrix",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("inubrix");
+    
+    CONFIG.DND5E.itemProperties.keepstone = {
+        label: "Keep Stone",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("keepstone");
+    
+    CONFIG.DND5E.itemProperties.mithral = {
+        label: "Mithral",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("mithral");
+    
+    CONFIG.DND5E.itemProperties.noqual = {
+        label: "Noqual",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("noqual");
+    
+    CONFIG.DND5E.itemProperties.orichalcum = {
+        label: "Orichalcum",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("orichalcum");
+    
+    CONFIG.DND5E.itemProperties.peachwood = {
+        label: "Peachwood",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("peachwood");
+    
+    CONFIG.DND5E.itemProperties.siccatite = {
+        label: "Siccatite",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("siccatite");
+    
+    CONFIG.DND5E.itemProperties.sisterstone = {
+        label: "Sisterstone",
+        isPhysical: "true"
+    };
+    
+    CONFIG.DND5E.validProperties.weapon.add("sisterstone");
+    CONFIG.DND5E.itemProperties.sovereignsteel = {
+        label: "Sovereign Steel",
+        isPhysical: "true"
+    };
+    
+    CONFIG.DND5E.validProperties.weapon.add("sovereignsteel");
+    
+    CONFIG.DND5E.itemProperties.warpglass = {
+        label: "Warpglass",
+        isPhysical: "true"
+    };
+    CONFIG.DND5E.validProperties.weapon.add("warpglass")
 });
