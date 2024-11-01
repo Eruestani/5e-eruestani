@@ -205,42 +205,45 @@ Hooks.once("init", () => {
 
     /// Override tool references
     CONFIG.DND5E.toolIds.alchemist = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.bagpipes = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.brewer = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.calligrapher = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.card = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.carpenter = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.cartographer = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.chess = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.cobbler = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.cook = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.dice = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.disg = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.drum = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.dulcimer = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.flute = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.forg = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.glassblower = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.herb = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.horn = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.jeweler = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.leatherworker = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.lute = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.lyre = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.mason = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.navg = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.painter = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.panflute = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.pois = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.potter = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.shawm = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.smith = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.thief = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.tinker = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.toolIds.viol = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.weaver = ""; // UUID of item for rich sublists
     CONFIG.DND5E.toolIds.woodcarver = ""; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.disg = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.forg = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.herb = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.navg = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.pois = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.thief = ""; // UUID of item for rich sublists
+
+    CONFIG.DND5E.toolIds.bagpipes = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.drum = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.dulcimer = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.flute = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.horn = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.lute = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.lyre = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.panflute = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.shawm = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.viol = ""; // UUID of item for rich sublists
+
+    CONFIG.DND5E.toolIds.card = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.chess = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.toolIds.dice = ""; // UUID of item for rich sublists
+    
     /// Override armor references
     CONFIG.DND5E.armorIds.breastplate = ""; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.chainmail = ""; // UUID of item for rich sublists
@@ -411,8 +414,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.validProperties.weapon.add("aerodynamic");
 
     CONFIG.DND5E.itemProperties.alternateB = {
-        label: "Alternate (B)",
-        isPhysical: "true"
+        label: "Alternate (B)"
     };
     CONFIG.DND5E.validProperties.weapon.add("alternateB");
 
@@ -437,8 +439,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.validProperties.weapon.add("blast");
 
     CONFIG.DND5E.itemProperties.breach = {
-        label: "Breach",
-        isPhysical: "true"
+        label: "Breach"
     };
     CONFIG.DND5E.validProperties.weapon.add("breach");
 
@@ -648,13 +649,12 @@ Hooks.once("init", () => {
         label: "Sisterstone",
         isPhysical: "true"
     };
-    
     CONFIG.DND5E.validProperties.weapon.add("sisterstone");
+    
     CONFIG.DND5E.itemProperties.sovereignsteel = {
         label: "Sovereign Steel",
         isPhysical: "true"
     };
-    
     CONFIG.DND5E.validProperties.weapon.add("sovereignsteel");
     
     CONFIG.DND5E.itemProperties.warpglass = {
