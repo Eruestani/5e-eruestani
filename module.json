@@ -6,9 +6,113 @@
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11"
+    "minimum": "12",
+    "verified": "12"
   },
+  "packs": [
+    {
+      "name": "eruestani-ancestries",
+      "label": "Ancestries",
+      "path": "./packs/ancestries.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-armours",
+      "label": "Armours",
+      "path": "./packs/armours.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-backgrounds",
+      "label": "Backgrounds",
+      "path": "./packs/backgrounds.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-classes",
+      "label": "Classes",
+      "path": "./packs/classes.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-consumables",
+      "label": "Consumables",
+      "path": "./packs/consumables.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-containers",
+      "label": "Containers",
+      "path": "./packs/containers.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-equipment",
+      "label": "Equipment",
+      "path": "./packs/equipment.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-features",
+      "label": "Features",
+      "path": "./packs/features.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-iconics",
+      "label": "Iconics",
+      "path": "./packs/iconics.db",
+      "type": "Actor"
+    },
+    {
+      "name": "eruestani-journals",
+      "label": "Journals",
+      "path": "./packs/journals.db",
+      "type": "Journal"
+    },
+    {
+      "name": "eruestani-loot",
+      "label": "Loot",
+      "path": "./packs/loot.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-macros",
+      "label": "Macros",
+      "path": "./packs/macros.db",
+      "type": "Macro"
+    },
+    {
+      "name": "eruestani-monsters",
+      "label": "Monsters",
+      "path": "./packs/monsters.db",
+      "type": "Actor"
+    },
+    {
+      "name": "eruestani-npcs",
+      "label": "NPCs",
+      "path": "./packs/npcs.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-spells",
+      "label": "Spells",
+      "path": "./packs/spells.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-tools",
+      "label": "Tools",
+      "path": "./packs/tools.db",
+      "type": "Item"
+    },
+    {
+      "name": "eruestani-weapons",
+      "label": "Weapons",
+      "path": "./packs/weapons.db",
+      "type": "Item"
+    }
+  ],
   "authors": [{
       "name": "Eruestani"
   }],
@@ -17,7 +121,7 @@
       "id": "dnd5e",
       "type": "system",
       "compatibility": {
-        "minimum": "3.0.0"
+        "minimum": "4.0.0"
       }
     }]
   },
