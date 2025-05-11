@@ -1,36 +1,20 @@
 Hooks.once("init", () => {
     /// Override ability references
-    CONFIG.DND5E.abilities.str = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.dex = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.con = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.int = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.wis = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.cha = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG", // UUID of journal entry page for rich tooltips
-    };
+    CONFIG.DND5E.abilities.str.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.dex.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.con.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.int.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.wis.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.cha.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG"; // UUID of journal entry page for rich tooltips
     /*
-    CONFIG.DND5E.abilities.hon = {
-        reference: "", // UUID of journal entry page for rich tooltips
-    };
-    CONFIG.DND5E.abilities.san = {
-        reference: "", // UUID of journal entry page for rich tooltips
-    };
+    CONFIG.DND5E.abilities.hon.reference = ""; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.san.reference = ""; // UUID of journal entry page for rich tooltips
     */
 
     /// Add new skills
@@ -52,168 +36,133 @@ Hooks.once("init", () => {
     };
 
     /// Override skill references
-    CONFIG.DND5E.skills.acr = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.ani = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.arc = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.ath = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.dec = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.his = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.ins = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.itm = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.inv = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.med = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.nat = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.prc = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.prf = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.per = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.rel = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.slt = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.ste = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.skills.sur = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
+    CONFIG.DND5E.skills.acr.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN";
+    CONFIG.DND5E.skills.acr.icon = "";
 
-    /// Override creature type references
-    CONFIG.DND5E.creatureTypes.aberration = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.beast = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.celestial = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.construct = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.dragon = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.elemental = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.fey = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.fiend = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.giant = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.humanoid = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.monstrosity = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.ooze = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.plant = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
-    CONFIG.DND5E.creatureTypes.undead = {
-        reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q", // UUID of journal entry page for rich tooltips
-        icon: "", // Icon used in favorites on new character sheet
-    };
+    CONFIG.DND5E.skills.ani.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE";
+    CONFIG.DND5E.skills.ani.icon = "";
+
+    CONFIG.DND5E.skills.arc.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N";
+    CONFIG.DND5E.skills.arc.icon = "";
+
+    CONFIG.DND5E.skills.ath.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv";
+    CONFIG.DND5E.skills.ath.icon = "";
+
+    CONFIG.DND5E.skills.dec.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ";
+    CONFIG.DND5E.skills.dec.icon = "";
+
+    CONFIG.DND5E.skills.his.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY";
+    CONFIG.DND5E.skills.his.icon = "";
+
+    CONFIG.DND5E.skills.ins.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z";
+    CONFIG.DND5E.skills.ins.icon = "";
+
+    CONFIG.DND5E.skills.itm.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg";
+    CONFIG.DND5E.skills.itm.icon = "";
+
+    CONFIG.DND5E.skills.inv.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM";
+    CONFIG.DND5E.skills.inv.icon = "";
+
+    CONFIG.DND5E.skills.med.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o";
+    CONFIG.DND5E.skills.med.icon = "";
+
+    CONFIG.DND5E.skills.nat.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31";
+    CONFIG.DND5E.skills.nat.icon = "";
+
+    CONFIG.DND5E.skills.prc.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY";
+    CONFIG.DND5E.skills.prc.icon = "";
+
+    CONFIG.DND5E.skills.prf.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe";
+    CONFIG.DND5E.skills.prf.icon = "";
+
+    CONFIG.DND5E.skills.per.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X";
+    CONFIG.DND5E.skills.per.icon = "";
+
+    CONFIG.DND5E.skills.rel.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM";
+    CONFIG.DND5E.skills.rel.icon = "";
+
+    CONFIG.DND5E.skills.slt.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A";
+    CONFIG.DND5E.skills.slt.icon = "";
+
+    CONFIG.DND5E.skills.ste.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI";
+    CONFIG.DND5E.skills.ste.icon = "";
+
+    CONFIG.DND5E.skills.sur.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi";
+    CONFIG.DND5E.skills.sur.icon = "";
+
+    CONFIG.DND5E.creatureTypes.aberration.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC";
+    CONFIG.DND5E.creatureTypes.aberration.icon = "";
+
+    CONFIG.DND5E.creatureTypes.beast.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv";
+    CONFIG.DND5E.creatureTypes.beast.icon = "";
+
+    CONFIG.DND5E.creatureTypes.celestial.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM";
+    CONFIG.DND5E.creatureTypes.celestial.icon = "";
+
+    CONFIG.DND5E.creatureTypes.construct.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d";
+    CONFIG.DND5E.creatureTypes.construct.icon = "";
+
+    CONFIG.DND5E.creatureTypes.dragon.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S";
+    CONFIG.DND5E.creatureTypes.dragon.icon = "";
+
+    CONFIG.DND5E.creatureTypes.elemental.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh";
+    CONFIG.DND5E.creatureTypes.elemental.icon = "";
+
+    CONFIG.DND5E.creatureTypes.fey.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC";
+    CONFIG.DND5E.creatureTypes.fey.icon = "";
+
+    CONFIG.DND5E.creatureTypes.fiend.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k";
+    CONFIG.DND5E.creatureTypes.fiend.icon = "";
+
+    CONFIG.DND5E.creatureTypes.giant.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf";
+    CONFIG.DND5E.creatureTypes.giant.icon = "";
+
+    CONFIG.DND5E.creatureTypes.humanoid.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw";
+    CONFIG.DND5E.creatureTypes.humanoid.icon = "";
+
+    CONFIG.DND5E.creatureTypes.monstrosity.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P";
+    CONFIG.DND5E.creatureTypes.monstrosity.icon = "";
+
+    CONFIG.DND5E.creatureTypes.ooze.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg";
+    CONFIG.DND5E.creatureTypes.ooze.icon = "";
+
+    CONFIG.DND5E.creatureTypes.plant.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1";
+    CONFIG.DND5E.creatureTypes.plant.icon = "";
+
+    CONFIG.DND5E.creatureTypes.undead.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q";
+    CONFIG.DND5E.creatureTypes.undead.icon = "";
 
     /// Add weapon-like weapon proficiency
     CONFIG.DND5E.weaponProficiencies.weaponlike = "Weapon-Like";
