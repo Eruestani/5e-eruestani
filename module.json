@@ -1,9 +1,9 @@
 {
     "id": "eruestani",
     "title": "5e Eruestani",
-    "description": "A simple module created to adjust the config of the offical 5e system.",
+    "description": "A simple module created to adjust the config of the official 5e system.",
     "version": "#{VERSION}#",
-    "library": "false",
+    "library": false,
     "manifestPlusVersion": "1.2.0",
     "compatibility": {
         "minimum": "12",
@@ -15,17 +15,15 @@
             "name": "Eruestani"
         }
     ],
-    "relationships": {
-        "systems": [
-            {
-                "id": "dnd5e",
-                "type": "system",
-                "compatibility": {
-                    "minimum": "4.0.0"
-                }
+    "relationships": [
+        {
+            "id": "dnd5e",
+            "type": "system",
+            "compatibility": {
+                "minimum": "4.0.0"
             }
-        ]
-    },
+        }
+    ],
     "esmodules": ["scripts/onload.js"],
     "flags": {
         "dnd5e": {
