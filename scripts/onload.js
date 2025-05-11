@@ -691,6 +691,8 @@ Hooks.once("init", () => {
     /*
     /// Add new containers
     CONFIG.DND5E.containerTypes.bandolier = "";
+    CONFIG.DND5E.containerTypes.box = "";
+    CONFIG.DND5E.containerTypes.boxScroll = "";
     CONFIG.DND5E.containerTypes.cask = "";
     CONFIG.DND5E.containerTypes.compartment = "";
     CONFIG.DND5E.containerTypes.crate = "";
@@ -698,6 +700,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.containerTypes.keg = "";
     CONFIG.DND5E.containerTypes.ketch = "";
     CONFIG.DND5E.containerTypes.lockbox = "";
+    CONFIG.DND5E.containerTypes.rucksack = "";
     CONFIG.DND5E.containerTypes.sackLarge = "";
     CONFIG.DND5E.containerTypes.satchel = "";
     CONFIG.DND5E.containerTypes.satchelWaterproof = "";
