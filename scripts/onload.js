@@ -1078,6 +1078,13 @@ Hooks.once("init", () => {
         metric: 20.4,
     };
 
+    // Implement silver standard
+    CONFIG.DND5E.currencies.cp.conversion = 100;
+    CONFIG.DND5E.currencies.sp.conversion = 1;
+    CONFIG.DND5E.currencies.ep.conversion = 0.02;
+    CONFIG.DND5E.currencies.gp.conversion = 0.01;
+    CONFIG.DND5E.currencies.pp.conversion = 0.0001;
+
     // Modify experience thresholds & levels
     CONFIG.DND5E.maxLevel = 30;
     CONFIG.DND5E.CHARACTER_EXP_LEVELS = [
