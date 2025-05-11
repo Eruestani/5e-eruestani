@@ -339,173 +339,173 @@ Hooks.once("init", () => {
     CONFIG.DND5E.ammoIds.slingBullet = ""; // UUID of item for rich sublists
 
     // Add new tools
+    CONFIG.DND5E.toolIds.appr =
+        "Compendium.world.equipment-tools.Item.S6GTrayArdJ9S9tg"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.appr = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.S6GTrayArdJ9S9tg", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.appr =
-        "Compendium.world.equipment-tools.Item.S6GTrayArdJ9S9tg"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.birdpipes =
+        "Compendium.world.equipment-tools.Item.rGKj9vdp3pVD8Dus"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.birdpipes = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.rGKj9vdp3pVD8Dus", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.birdpipes =
-        "Compendium.world.equipment-tools.Item.rGKj9vdp3pVD8Dus"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.dartboard =
+        "Compendium.world.equipment-tools.Item.p0o7oQTunkUuWZsC"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.dartboard = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.p0o7oQTunkUuWZsC", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.dartboard =
-        "Compendium.world.equipment-tools.Item.p0o7oQTunkUuWZsC"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.glaur =
+        "Compendium.world.equipment-tools.Item.rW5fL7t408FxteDo"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.glaur = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.rW5fL7t408FxteDo", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.glaur =
-        "Compendium.world.equipment-tools.Item.rW5fL7t408FxteDo"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.handdrum =
+        "Compendium.world.equipment-tools.Item.CpNf1kg2DaUlft7t"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.handdrum = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.CpNf1kg2DaUlft7t", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.handdrum =
-        "Compendium.world.equipment-tools.Item.CpNf1kg2DaUlft7t"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.harp =
+        "Compendium.world.equipment-tools.Item.4IjQ1gW7SAMUq4vU"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.harp = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.4IjQ1gW7SAMUq4vU", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.harp =
-        "Compendium.world.equipment-tools.Item.4IjQ1gW7SAMUq4vU"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.hnefatafl =
+        "Compendium.world.equipment-tools.Item.7sQXJP2Jzm59NXUy"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.hnefatafl = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.7sQXJP2Jzm59NXUy", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.hnefatafl =
-        "Compendium.world.equipment-tools.Item.7sQXJP2Jzm59NXUy"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.kubb =
+        "Compendium.world.equipment-tools.Item.olmRJngU1Bdn4EWI"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.kubb = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.olmRJngU1Bdn4EWI", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.kubb =
-        "Compendium.world.equipment-tools.Item.olmRJngU1Bdn4EWI"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.longhorn =
+        "Compendium.world.equipment-tools.Item.S7lWlujDdmypB4H2"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.longhorn = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.S7lWlujDdmypB4H2", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.longhorn =
-        "Compendium.world.equipment-tools.Item.S7lWlujDdmypB4H2"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.ninemen =
+        "Compendium.world.equipment-tools.Item.dqjL3RlCaKUvxcCm"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.ninemen = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.dqjL3RlCaKUvxcCm", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.ninemen =
-        "Compendium.world.equipment-tools.Item.dqjL3RlCaKUvxcCm"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.ringtoss =
+        "Compendium.world.equipment-tools.Item.6lsX476Oy8pL16Eo"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.ringtoss = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.6lsX476Oy8pL16Eo", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.ringtoss =
-        "Compendium.world.equipment-tools.Item.6lsX476Oy8pL16Eo"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.sculpter =
+        "Compendium.world.equipment-tools.Item.WTPtlnhvKpArIPTB"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.sculpter = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.WTPtlnhvKpArIPTB", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.sculpter =
-        "Compendium.world.equipment-tools.Item.WTPtlnhvKpArIPTB"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.songhorn =
+        "Compendium.world.equipment-tools.Item.EbyA1cleMOXCAIlp"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.songhorn = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.EbyA1cleMOXCAIlp", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.songhorn =
-        "Compendium.world.equipment-tools.Item.EbyA1cleMOXCAIlp"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.surg =
+        "Compendium.world.equipment-tools.Item.tFqZN1WwHTO12L7k"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.surg = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.tFqZN1WwHTO12L7k", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.surg =
-        "Compendium.world.equipment-tools.Item.tFqZN1WwHTO12L7k"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.tantan =
+        "Compendium.world.equipment-tools.Item.ZNewSFtF2CHU6K4C"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.tantan = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.ZNewSFtF2CHU6K4C", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.tantan =
-        "Compendium.world.equipment-tools.Item.ZNewSFtF2CHU6K4C"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.tattooartist =
+        "Compendium.world.equipment-tools.Item.voV6fRbWrXO2F9A8"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.tattooartist = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.voV6fRbWrXO2F9A8", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.tattooartist =
-        "Compendium.world.equipment-tools.Item.voV6fRbWrXO2F9A8"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.tarokka =
+        "Compendium.world.equipment-tools.Item.a8O6ghE5lygNkihT"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.tarokka = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.a8O6ghE5lygNkihT", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.tarokka =
-        "Compendium.world.equipment-tools.Item.a8O6ghE5lygNkihT"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.thelarr =
+        "Compendium.world.equipment-tools.Item.4VtMgRjJ7mWYIx1S"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.thelarr = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.4VtMgRjJ7mWYIx1S", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.thelarr =
-        "Compendium.world.equipment-tools.Item.4VtMgRjJ7mWYIx1S"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.threedragon =
+        "Compendium.world.equipment-tools.Item.K4SqJx3os7Krmygl"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.threedragon = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.K4SqJx3os7Krmygl", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.threedragon =
-        "Compendium.world.equipment-tools.Item.K4SqJx3os7Krmygl"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.tocken =
+        "Compendium.world.equipment-tools.Item.wUV4hce9A2Zke0E3"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.tocken = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.wUV4hce9A2Zke0E3", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.tocken =
-        "Compendium.world.equipment-tools.Item.wUV4hce9A2Zke0E3"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.trictrac =
+        "Compendium.world.equipment-tools.Item.ZBDXsMMwck50f8MM"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.trictrac = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.ZBDXsMMwck50f8MM", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.trictrac =
-        "Compendium.world.equipment-tools.Item.ZBDXsMMwck50f8MM"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.wargong =
+        "Compendium.world.equipment-tools.Item.C2l7QyR7DpWwLECW"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.wargong = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.C2l7QyR7DpWwLECW", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.wargong =
-        "Compendium.world.equipment-tools.Item.C2l7QyR7DpWwLECW"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.yarting =
+        "Compendium.world.equipment-tools.Item.sLwuYWRBKfMeRL49"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.yarting = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.sLwuYWRBKfMeRL49", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.yarting =
-        "Compendium.world.equipment-tools.Item.sLwuYWRBKfMeRL49"; // UUID of item for rich sublists
 
+    CONFIG.DND5E.toolIds.zulkoon =
+        "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.zulkoon = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8", // UUID of item for rich sublists
     };
-    CONFIG.DND5E.toolIds.zulkoon =
-        "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8"; // UUID of item for rich sublists
 
     /// Override existing tool references
     CONFIG.DND5E.toolIds.alchemist =
