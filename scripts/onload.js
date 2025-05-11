@@ -332,7 +332,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
     */
 
-    /// Override ammo references
+    /// Override existing ammo references
     CONFIG.DND5E.ammoIds.arrow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.blowgunNeedle = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.crossbowBolt = ""; // UUID of item for rich sublists
@@ -507,7 +507,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.toolIds.zulkoon =
         "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8"; // UUID of item for rich sublists
 
-    /// Override tool references
+    /// Override existing tool references
     CONFIG.DND5E.toolIds.alchemist =
         "Compendium.world.equipment-tools.Item.83wDMTlZ2QFGHqHK"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.alchemist.id =
@@ -687,6 +687,41 @@ Hooks.once("init", () => {
         "Compendium.world.equipment-tools.Item.eyTmmxEx96fgwWxn"; // UUID of item for rich sublists
     CONFIG.DND5E.tools.woodcarver.id =
         "Compendium.world.equipment-tools.Item.eyTmmxEx96fgwWxn"; // UUID of item for rich sublists
+
+    /*
+    /// Add new containers
+    CONFIG.DND5E.containerTypes.bandolier = "";
+    CONFIG.DND5E.containerTypes.cask = "";
+    CONFIG.DND5E.containerTypes.compartment = "";
+    CONFIG.DND5E.containerTypes.crate = "";
+    CONFIG.DND5E.containerTypes.haversack = "";
+    CONFIG.DND5E.containerTypes.keg = "";
+    CONFIG.DND5E.containerTypes.ketch = "";
+    CONFIG.DND5E.containerTypes.lockbox = "";
+    CONFIG.DND5E.containerTypes.sackLarge = "";
+    CONFIG.DND5E.containerTypes.satchel = "";
+    CONFIG.DND5E.containerTypes.satchelWaterproof = "";
+
+    /// Override existing container references
+    CONFIG.DND5E.containerTypes.backpack = "";
+    CONFIG.DND5E.containerTypes.barrel = "";
+    CONFIG.DND5E.containerTypes.basket = "";
+    CONFIG.DND5E.containerTypes.boltcase = "";
+    CONFIG.DND5E.containerTypes.bottle = "";
+    CONFIG.DND5E.containerTypes.bucket = "";
+    CONFIG.DND5E.containerTypes.case = "";
+    CONFIG.DND5E.containerTypes.chest = "";
+    CONFIG.DND5E.containerTypes.flask = "";
+    CONFIG.DND5E.containerTypes.jug = "";
+    CONFIG.DND5E.containerTypes.pitcher = "";
+    CONFIG.DND5E.containerTypes.pot = "";
+    CONFIG.DND5E.containerTypes.pouch = "";
+    CONFIG.DND5E.containerTypes.quiver = "";
+    CONFIG.DND5E.containerTypes.sack = "";
+    CONFIG.DND5E.containerTypes.saddlebags = "";
+    CONFIG.DND5E.containerTypes.tankard = "";
+    CONFIG.DND5E.containerTypes.vial = "";
+    */
 
     /// Add dunamancy spell school
     CONFIG.DND5E.spellSchools.dun = {
