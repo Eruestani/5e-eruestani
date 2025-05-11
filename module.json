@@ -1,238 +1,42 @@
 {
-  "id": "eruestani",
-  "title": "5e Eruestani",
-  "description": "A simple module created to adjust the config of the offical 5e system.",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "manifestPlusVersion": "1.2.0",
-  "compatibility": {
-    "minimum": "12",
-    "verified": "12"
-  },
-  "packs": [
-    {
-      "name": "eruestani-ancestries",
-      "label": "Ancestries",
-      "path": "./packs/ancestries.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["race"]
+    "id": "eruestani",
+    "title": "5e Eruestani",
+    "description": "A simple module created to adjust the config of the offical 5e system.",
+    "version": "#{VERSION}#",
+    "library": "false",
+    "manifestPlusVersion": "1.2.0",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "packs": [],
+    "authors": [
+        {
+            "name": "Eruestani"
         }
-      }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "4.0.0"
+                }
+            }
+        ]
     },
-    {
-      "name": "eruestani-armours",
-      "label": "Armours",
-      "path": "./packs/armours.db",
-      "type": "Item",
-      "flags": {
+    "esmodules": ["scripts/onload.js"],
+    "flags": {
         "dnd5e": {
-          "types": ["equipment"]
+            "sourceBooks": {
+                "Erue": "Eruestani's Homebrew"
+            }
         }
-      }
     },
-    {
-      "name": "eruestani-backgrounds",
-      "label": "Backgrounds",
-      "path": "./packs/backgrounds.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["background"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-classes",
-      "label": "Classes",
-      "path": "./packs/classes.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["class", "subclass"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-consumables",
-      "label": "Consumables",
-      "path": "./packs/consumables.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["consumable"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-containers",
-      "label": "Containers",
-      "path": "./packs/containers.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["container"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-equipment",
-      "label": "Equipment",
-      "path": "./packs/equipment.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["equipment"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-features",
-      "label": "Features",
-      "path": "./packs/features.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["feat"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-iconics",
-      "label": "Iconics",
-      "path": "./packs/iconics.db",
-      "type": "Actor",
-      "flags": {
-        "dnd5e": {
-          "types": ["character"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-journals",
-      "label": "Journals",
-      "path": "./packs/journals.db",
-      "type": "JournalEntry",
-      "flags": {
-        "display": "table-of-contents"
-      }
-    },
-    {
-      "name": "eruestani-loot",
-      "label": "Loot",
-      "path": "./packs/loot.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["loot"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-macros",
-      "label": "Macros",
-      "path": "./packs/macros.db",
-      "type": "Macro"
-    },
-    {
-      "name": "eruestani-monsters",
-      "label": "Monsters",
-      "path": "./packs/monsters.db",
-      "type": "Actor",
-      "flags": {
-        "dnd5e": {
-          "types": ["npc"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-monster-features",
-      "label": "Monster Features",
-      "path": "./packs/monster-features.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["feat"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-npcs",
-      "label": "NPCs",
-      "path": "./packs/npcs.db",
-      "type": "Actor",
-      "flags": {
-        "dnd5e": {
-          "types": ["npc"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-spells",
-      "label": "Spells",
-      "path": "./packs/spells.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["spell"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-tables",
-      "label": "Tables",
-      "path": "./packs/tables.db",
-      "type": "RollTable"
-    },
-    {
-      "name": "eruestani-tools",
-      "label": "Tools",
-      "path": "./packs/tools.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["tool"]
-        }
-      }
-    },
-    {
-      "name": "eruestani-weapons",
-      "label": "Weapons",
-      "path": "./packs/weapons.db",
-      "type": "Item",
-      "flags": {
-        "dnd5e": {
-          "types": ["weapon"]
-        }
-      }
-    }
-  ],
-  "authors": [{
-      "name": "Eruestani"
-  }],
-  "relationships": {
-    "systems": [{
-      "id": "dnd5e",
-      "type": "system",
-      "compatibility": {
-        "minimum": "4.0.0"
-      }
-    }]
-  },
-  "esmodules": [
-    "scripts/onload.js"
-  ],
-  "flags": {
-    "dnd5e": {
-      "sourceBooks": {
-        "Erue": "Eruestani's Homebrew"
-      }
-    }
-  },
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md"
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
+    "license": "LICENSE",
+    "readme": "README.md"
 }
