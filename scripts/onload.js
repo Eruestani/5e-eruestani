@@ -212,46 +212,103 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponTypes.expertM = "Expert Melee";
     CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged";
 
+    // Add new weapons
+    // Simple Melee Weapons
+    CONFIG.DND5E.weaponIds.cestus =
+        "Compendium.world.weapons.Item.tagzD9iJGrVgulMJ"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.crook =
+        "Compendium.world.weapons.Item.cfe1bbYsgVMOazn9"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.daggerResevoir =
+        "Compendium.world.weapons.Item.UYBZFRcvI8JyUyro"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.daggerPunching =
+        "Compendium.world.weapons.Item.EebeQj5mrfWcVul8"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.daggerThrowing =
+        "Compendium.world.weapons.Item.L6DeD80tRNWQXUOl"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.fingerSpikes =
+        "Compendium.world.weapons.Item.h3lQueZFd5nbbZrK"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.fustibalus =
+        "Compendium.world.weapons.Item.CWBfEnSBrOOJtb0J"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.gauntletArmor =
+        "Compendium.world.weapons.Item.bLeFWtt3IhhIfHGv"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.gauntletClawed =
+        "Compendium.world.weapons.Item.HhtmLlK7gEciFkIE"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.gauntletSpikedArmor =
+        "Compendium.world.weapons.Item.B9jtmoJPKpuw5vXY"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.hatchet =
+        "Compendium.world.weapons.Item.hy53JJHnByjCZh36"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.hook =
+        "Compendium.world.weapons.Item.L9IefCWycTybnlLa"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.knobkerrie =
+        "Compendium.world.weapons.Item.dsdhklbMq1gE1U65"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.maceLiturgical =
+        "Compendium.world.weapons.Item.6PALGHpx3h0a6e9P"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.sap =
+        "Compendium.world.weapons.Item.I4KAmDqNWwchxiHP"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.scourge =
+        "Compendium.world.weapons.Item.YUbchNO6eoHOsghC"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.scythe =
+        "Compendium.world.weapons.Item.eAnwm6Ae3Rg2GuCK"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.spearShort =
+        "Compendium.world.weapons.Item.zMfSptEL8geAFQFs"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.stakeWooden =
+        "Compendium.world.weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.stiletto =
+        "Compendium.world.weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.tailSpikes =
+        "Compendium.world.weapons.Item.K8nzvm6Ybhi41gpB"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.warpickLight =
+        "Compendium.world.weapons.Item.jKrsfrT7llXoeDhW"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.weightedKnuckles =
+        "Compendium.world.weapons.Item.SLTBJ4yak9XbKti7"; // UUID of item for rich sublists
+
     // Override existing weapon references
-    /*
     CONFIG.DND5E.weaponIds.battleaxe = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.blowgun = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.club = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.dagger = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.club =
+        "Compendium.world.weapons.Item.KjJj2QzJbhXfXWIv"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.dagger =
+        "Compendium.world.weapons.Item.zAyacNtrMru8lS8A"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.dart = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.flail = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.glaive = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.greataxe = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.greatclub = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.greatclub =
+        "Compendium.world.weapons.Item.OPxQGREFGpDsunjx"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.greatsword = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.halberd = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.handaxe = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.handaxe =
+        "Compendium.world.weapons.Item.Pb4unYtD9VgED3Pt"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.handcrossbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.heavycrossbow = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.javelin = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.javelin =
+        "Compendium.world.weapons.Item.M7V5loiy3WB2BykB"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.lance = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.lightcrossbow = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.lighthammer = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.lighthammer =
+        "Compendium.world.weapons.Item.prpqqlfL1rtWWzeX"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.longbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.longsword = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.mace = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.mace =
+        "Compendium.world.weapons.Item.yTYGTyCYti88eo8F"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.maul = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.morningstar = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.net = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.pike = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.quarterstaff = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.quarterstaff =
+        "Compendium.world.weapons.Item.GUcwhhSpvUDy2nol"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.rapier = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.scimitar = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.shortsword = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.sickle = ""; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.spear = ""; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.sickle =
+        "Compendium.world.weapons.Item.sAC9oJqBXcPG9CnF"; // UUID of item for rich sublists
+    CONFIG.DND5E.weaponIds.spear =
+        "Compendium.world.weapons.Item.lNvz2elKWfF0vvpi"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.shortbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.sling = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.trident = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.warpick = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.warhammer = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.whip = ""; // UUID of item for rich sublists
-    */
 
     // Override weapon mastery references
     /*
