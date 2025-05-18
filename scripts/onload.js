@@ -771,6 +771,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.featureTypes.superiorHuntersDefense = {
         label: "Battle Maneuver"
     };
+    */
 
     // Adds new alignment options
     CONFIG.DND5E.alignments.sg = "Social Good";
@@ -789,7 +790,6 @@ Hooks.once("init", () => {
     CONFIG.DND5E.alignments.ci = "Chaotic Impure";
     CONFIG.DND5E.alignments.se = "Social Evil";
     CONFIG.DND5E.alignments.re = "Rebel Evil";
-    */
 
     // Add new weapon properties
     CONFIG.DND5E.itemProperties.accurate = {
