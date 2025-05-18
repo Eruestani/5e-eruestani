@@ -12,10 +12,10 @@ Hooks.once("init", () => {
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.cha.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG"; // UUID of journal entry page for rich tooltips
-    /*
-    CONFIG.DND5E.abilities.hon.reference = ""; // UUID of journal entry page for rich tooltips
-    CONFIG.DND5E.abilities.san.reference = ""; // UUID of journal entry page for rich tooltips
-    */
+    CONFIG.DND5E.abilities.hon.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jsUDUjzPI4VKWgBg"; // UUID of journal entry page for rich tooltips
+    CONFIG.DND5E.abilities.san.reference =
+        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.lmFEwu5ynZtVocJG"; // UUID of journal entry page for rich tooltips
 
     // Add new skills
     CONFIG.DND5E.skills.clt = {
