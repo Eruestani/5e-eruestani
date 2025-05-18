@@ -1,5 +1,5 @@
 Hooks.once("init", () => {
-    /// Override ability references
+    // Override ability references
     CONFIG.DND5E.abilities.str.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.dex.reference =
@@ -17,7 +17,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.abilities.san.reference = ""; // UUID of journal entry page for rich tooltips
     */
 
-    /// Add new skills
+    // Add new skills
     CONFIG.DND5E.skills.clt = {
         label: "Culture",
         ability: "int",
@@ -35,78 +35,96 @@ Hooks.once("init", () => {
         icon: "systems/dnd5e/icons/svg/items/feature.svg", // Icon used in favorites on new character sheet
     };
 
-    /// Override skill references
+    // Override skill references
     CONFIG.DND5E.skills.acr.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN";
-    CONFIG.DND5E.skills.acr.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.acr.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ani.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE";
-    CONFIG.DND5E.skills.ani.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.ani.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.arc.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N";
-    CONFIG.DND5E.skills.arc.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.arc.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ath.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv";
-    CONFIG.DND5E.skills.ath.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.ath.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.dec.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ";
-    CONFIG.DND5E.skills.dec.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.dec.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.his.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY";
-    CONFIG.DND5E.skills.his.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.his.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ins.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z";
-    CONFIG.DND5E.skills.ins.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.ins.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.itm.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg";
-    CONFIG.DND5E.skills.itm.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.itm.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.inv.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM";
-    CONFIG.DND5E.skills.inv.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.inv.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.med.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o";
-    CONFIG.DND5E.skills.med.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.med.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.nat.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31";
-    CONFIG.DND5E.skills.nat.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.nat.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.prc.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY";
-    CONFIG.DND5E.skills.prc.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.prc.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.prf.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe";
-    CONFIG.DND5E.skills.prf.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.prf.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.per.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X";
-    CONFIG.DND5E.skills.per.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.per.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.rel.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM";
-    CONFIG.DND5E.skills.rel.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.rel.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.slt.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A";
-    CONFIG.DND5E.skills.slt.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.slt.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ste.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI";
-    CONFIG.DND5E.skills.ste.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.ste.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.sur.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi";
-    CONFIG.DND5E.skills.sur.icon = "systems/dnd5e/icons/svg/items/feature.svg";
+    CONFIG.DND5E.skills.sur.icon =
+        "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.creatureTypes.aberration.reference =
         "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC";
@@ -178,21 +196,23 @@ Hooks.once("init", () => {
     CONFIG.DND5E.creatureTypes.undead.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
-    /// Add weapon-like weapon proficiency
+    // Add weapon-like weapon proficiency
     CONFIG.DND5E.weaponProficiencies.weaponlike = "Weapon-Like";
-    CONFIG.DND5E.weaponProficienciesMap.weaponliketM = "weaponlike";
-    CONFIG.DND5E.weaponProficienciesMap.weaponlikeR = "weaponlike";
+    CONFIG.DND5E.weaponProficienciesMap.weaponliketM =
+        "weaponlike";
+    CONFIG.DND5E.weaponProficienciesMap.weaponlikeR =
+        "weaponlike";
     CONFIG.DND5E.weaponTypes.weaponlikeM = "Weapon-Like Melee";
     CONFIG.DND5E.weaponTypes.weaponlikeR = "Weapon-Like Ranged";
 
-    /// Add expert weapon proficiency
+    // Add expert weapon proficiency
     CONFIG.DND5E.weaponProficiencies.exp = "Expert";
     CONFIG.DND5E.weaponProficienciesMap.expertM = "exp";
     CONFIG.DND5E.weaponProficienciesMap.expertR = "exp";
     CONFIG.DND5E.weaponTypes.expertM = "Expert Melee";
     CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged";
 
-    /// Override existing weapon references
+    // Override existing weapon references
     /*
     CONFIG.DND5E.weaponIds.battleaxe = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.blowgun = ""; // UUID of item for rich sublists
@@ -233,7 +253,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponIds.whip = ""; // UUID of item for rich sublists
     */
 
-    /// Override weapon mastery references
+    // Override weapon mastery references
     /*
     CONFIG.DND5E.weaponMasteries = {
         cleave: {
@@ -271,7 +291,7 @@ Hooks.once("init", () => {
     };
     */
 
-    /// Add new armors
+    // Add new armors
     CONFIG.DND5E.armorIds.leatherscale =
         "Compendium.world.armors.Item.5a3pOSbZ0cK1PC7T"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.layeredfur =
@@ -285,7 +305,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorIds.bandedmail =
         "Compendium.world.armors.Item.qwxcyz7PAuOD5g6m"; // UUID of item for rich sublists
 
-    /// Override existing armor references
+    // Override existing armor references
     CONFIG.DND5E.armorIds.breastplate =
         "Compendium.world.armors.Item.4gBtppT9976u0wjD"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.chainmail =
@@ -311,7 +331,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorIds.studded =
         "Compendium.world.armors.Item.azDEdZOeMQatmWoe"; // UUID of item for rich sublists
 
-    /// Add new shields
+    // Add new shields
     CONFIG.DND5E.shieldIds.buckler =
         "Compendium.world.armors.Item.2cZxFnvqVqIwcFds"; // UUID of item for rich sublists
 
@@ -321,18 +341,18 @@ Hooks.once("init", () => {
     CONFIG.DND5E.shieldIds.towersheild =
         "Compendium.world.armors.Item.TS7XbgF7kDyuWkn3"; // UUID of item for rich sublists
 
-    /// Override existing shield references
+    // Override existing shield references
     CONFIG.DND5E.shieldIds.shield =
         "Compendium.world.armors.Item.WX3i3YPSopWvIM36"; // UUID of item for rich sublists
 
-    /// Add heavy shields
+    // Add heavy shields
     /* This does not work as intended, but is left here for reference
     CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield";
     CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields";
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
     */
 
-    /// Override existing ammo references
+    // Override existing ammo references
     CONFIG.DND5E.ammoIds.arrow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.blowgunNeedle = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.crossbowBolt = ""; // UUID of item for rich sublists
@@ -436,7 +456,7 @@ Hooks.once("init", () => {
         id: "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8", // UUID of item for rich sublists
     };
 
-    /// Override existing tool references
+    // Override existing tool references
     CONFIG.DND5E.tools.alchemist = {
         ability: "int", // Ability used for tool checks
         id: "Compendium.world.equipment-tools.Item.83wDMTlZ2QFGHqHK", // UUID of item for rich sublists
@@ -582,45 +602,81 @@ Hooks.once("init", () => {
         id: "Compendium.world.equipment-tools.Item.eyTmmxEx96fgwWxn", // UUID of item for rich sublists
     };
 
-    /*
-    /// Add new containers
-    CONFIG.DND5E.containerTypes.bandolier = "";
-    CONFIG.DND5E.containerTypes.box = "";
-    CONFIG.DND5E.containerTypes.boxScroll = "";
-    CONFIG.DND5E.containerTypes.cask = "";
-    CONFIG.DND5E.containerTypes.compartment = "";
-    CONFIG.DND5E.containerTypes.crate = "";
-    CONFIG.DND5E.containerTypes.haversack = "";
-    CONFIG.DND5E.containerTypes.keg = "";
-    CONFIG.DND5E.containerTypes.ketch = "";
-    CONFIG.DND5E.containerTypes.lockbox = "";
-    CONFIG.DND5E.containerTypes.rucksack = "";
-    CONFIG.DND5E.containerTypes.sackLarge = "";
-    CONFIG.DND5E.containerTypes.satchel = "";
-    CONFIG.DND5E.containerTypes.satchelWaterproof = "";
+    // Add new containers
+    CONFIG.DND5E.containerTypes.bandolierItem =
+        "Compendium.world.equipment-containers.Item.XSHfp4hez58ydS7B"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.bandolierPotion =
+        "Compendium.world.equipment-containers.Item.DMPlHu151Qs2Q0eS"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.barrelDry =
+        "Compendium.world.equipment-containers.Item.2Vu1Ekz0dJDI2WzS"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.box =
+        "Compendium.world.equipment-containers.Item.8g3u8NjB0j4BHx5a"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.boxScroll =
+        "Compendium.world.equipment-containers.Item.f5YcSV0ZFZZ7BOxL"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.cask =
+        "Compendium.world.equipment-containers.Item.dZG1629G6ZMKdS2v"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.compartment =
+        "Compendium.world.equipment-containers.Item.NoX8QR1xNS96vA9m"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.crate =
+        "Compendium.world.equipment-containers.Item.oIkvDIEuLW1zHRb2"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.haversack =
+        "Compendium.world.equipment-containers.Item.OA2l9Wa2GbMBUdE3"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.keg =
+        "Compendium.world.equipment-containers.Item.c3PUrOxzQV2qVMCI"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.ketch =
+        "Compendium.world.equipment-containers.Item.agZgHMrFwU9pmy9k"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.lockbox =
+        "Compendium.world.equipment-containers.Item.XoRSNKxCRgOpz9Bs"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.rucksack =
+        "Compendium.world.equipment-containers.Item.3OWlZKEs3pZPXPaR"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.sackLarge =
+        "Compendium.world.equipment-containers.Item.zXzmannRavel5W4U"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.satchel =
+        "Compendium.world.equipment-containers.Item.Aq8xwUtSYj8m3Ll9"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.satchelWaterproof =
+        "Compendium.world.equipment-containers.Item.jT8UblmS4YG2vlZi"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.waterskin =
+        "Compendium.world.equipment-containers.Item.0N2ucoivTaMtqgak"; // UUID of item for rich sublists
 
-    /// Override existing container references
-    CONFIG.DND5E.containerTypes.backpack = "";
-    CONFIG.DND5E.containerTypes.barrel = "";
-    CONFIG.DND5E.containerTypes.basket = "";
-    CONFIG.DND5E.containerTypes.boltcase = "";
-    CONFIG.DND5E.containerTypes.bottle = "";
-    CONFIG.DND5E.containerTypes.bucket = "";
-    CONFIG.DND5E.containerTypes.case = "";
-    CONFIG.DND5E.containerTypes.chest = "";
-    CONFIG.DND5E.containerTypes.flask = "";
-    CONFIG.DND5E.containerTypes.jug = "";
-    CONFIG.DND5E.containerTypes.pitcher = "";
-    CONFIG.DND5E.containerTypes.pot = "";
-    CONFIG.DND5E.containerTypes.pouch = "";
-    CONFIG.DND5E.containerTypes.quiver = "";
-    CONFIG.DND5E.containerTypes.sack = "";
-    CONFIG.DND5E.containerTypes.saddlebags = "";
-    CONFIG.DND5E.containerTypes.tankard = "";
-    CONFIG.DND5E.containerTypes.vial = "";
-    */
+    // Override existing container references
+    CONFIG.DND5E.containerTypes.backpack =
+        "Compendium.world.equipment-containers.Item.krLHFroJOTD2ZiIh"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.barrel =
+        "Compendium.world.equipment-containers.Item.yD8flEHT95mchukr"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.basket =
+        "Compendium.world.equipment-containers.Item.pwPfz3jpDeZTvmGs"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.boltcase =
+        "Compendium.world.equipment-containers.Item.gaZPKIs4yVk5DTGp"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.bottle =
+        "Compendium.world.equipment-containers.Item.e9q4WvuHroflqWp3"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.bucket =
+        "Compendium.world.equipment-containers.Item.JIPsKZMMgkvPR3ji"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.case =
+        "Compendium.world.equipment-containers.Item.3lFNgZKQpB79511C"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.chest =
+        "Compendium.world.equipment-containers.Item.kfYQaxxH9PuAiTac"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.flask =
+        "Compendium.world.equipment-containers.Item.KaqUtM8qSKjrOIVO"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.jug =
+        "Compendium.world.equipment-containers.Item.kQuOf3BBXgFjRmug"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.pitcher =
+        "Compendium.world.equipment-containers.Item.43dCcx3Xzmb1ZAMk"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.pot =
+        "Compendium.world.equipment-containers.Item.tiWy2PdmeVX26brH"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.pouch =
+        "Compendium.world.equipment-containers.Item.FAj1CjxkMOU4XgjL"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.quiver =
+        "Compendium.world.equipment-containers.Item.EAie6KgWyNVCO3hV"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.sack =
+        "Compendium.world.equipment-containers.Item.lBXVMf1wGUyswcPR"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.saddlebags =
+        "Compendium.world.equipment-containers.Item.BWOXbnggziUvVPU6"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.tankard =
+        "Compendium.world.equipment-containers.Item.eDMnB91tAzpnJAfx"; // UUID of item for rich sublists
+    CONFIG.DND5E.containerTypes.vial =
+        "Compendium.world.equipment-containers.Item.B8E7jsMW4VWC2DPe"; // UUID of item for rich sublists
 
-    /// Add dunamancy spell school
+    // Add dunamancy spell school
     CONFIG.DND5E.spellSchools.dun = {
         label: "Dunamancy",
         icon: "",
@@ -630,7 +686,7 @@ Hooks.once("init", () => {
 
     /*
 
-    /// Override class features
+    // Override class features
     CONFIG.DND5E.featureTypes.class = {
         label: "Class Features",
         subtypes: {
@@ -716,7 +772,7 @@ Hooks.once("init", () => {
         label: "Battle Maneuver"
     };
 
-    /// Adds new alignment options
+    // Adds new alignment options
     CONFIG.DND5E.alignments.sg = "Social Good";
     CONFIG.DND5E.alignments.rg = "Rebel Good";
     CONFIG.DND5E.alignments.lm = "Lawful Moral";
@@ -735,7 +791,7 @@ Hooks.once("init", () => {
     CONFIG.DND5E.alignments.re = "Rebel Evil";
     */
 
-    /// Add new weapon properties
+    // Add new weapon properties
     CONFIG.DND5E.itemProperties.accurate = {
         label: "Accurate",
     };
@@ -881,7 +937,7 @@ Hooks.once("init", () => {
     };
     CONFIG.DND5E.validProperties.weapon.add("Wounding");
 
-    /// Add new material properties
+    // Add new material properties
     CONFIG.DND5E.itemProperties.abysium = {
         label: "Abysium",
         isPhysical: "true",
@@ -1010,6 +1066,62 @@ Hooks.once("init", () => {
         metric: 20.4,
     };
 
+    // Add Volume & Weight Units
+    CONFIG.DND5E.volumeUnits.gallon = {
+        abbreviation: "gal",
+        conversion: 6.2288354853706, // 1 cubic foot as imperial gallons is 6.2288354853706
+        label: "Gallon",
+        type: "imperial",
+    };
+    CONFIG.DND5E.volumeUnits.quart = {
+        // 1/4 gallon
+        abbreviation: "qt",
+        conversion: 1.5575862068966, // 1 cubic foot as imperial quart is 1.5575862068966
+        label: "Quart",
+        type: "imperial",
+    };
+    CONFIG.DND5E.volumeUnits.pint = {
+        // 1/8 gallon
+        abbreviation: "pt",
+        conversion: 0.3894269005848, // 1 cubic foot as imperial pint is 0.3894269005848
+        label: "Pint",
+        type: "imperial",
+    };
+    CONFIG.DND5E.volumeUnits.cup = {
+        // 1/16 gallon
+        abbreviation: "cup",
+        conversion: 0.098578947368421, // 1 cubic foot as imperial cup is 0.098578947368421
+        label: "Cup",
+        type: "imperial",
+    };
+    CONFIG.DND5E.volumeUnits.fluidOunce = {
+        // 1/128 gallon
+        abbreviation: "fl oz",
+        conversion: 0.029573529411765, // 1 cubic foot as imperial fluid ounce is 0.029573529411765
+        label: "Vial",
+        type: "imperial",
+    };
+    CONFIG.DND5E.weightUnits.st = {
+        abbreviation: "st",
+        conversion: 14, // 1 stone is 14 pounds
+        label: "Stone",
+        type: "imperial",
+    };
+    CONFIG.DND5E.weightUnits.oz = {
+        abbreviation: "oz",
+        conversion: 0.0625, // 1 ounce is 1/16 of a pound
+        label: "Ounce",
+        type: "imperial",
+    };
+
+    // Override existing weight units
+    CONFIG.DND5E.weightUnits.tn = {
+        abbreviation: "tn",
+        conversion: 2240, // 1 ton is 2240 pounds because long ton is used
+        label: "Ton",
+        type: "imperial",
+    };
+
     // Implement silver standard
     CONFIG.DND5E.currencies.cp.conversion = 100;
     CONFIG.DND5E.currencies.sp.conversion = 1;
@@ -1020,15 +1132,16 @@ Hooks.once("init", () => {
     // Modify experience thresholds & levels
     CONFIG.DND5E.maxLevel = 30;
     CONFIG.DND5E.CHARACTER_EXP_LEVELS = [
-        0, 750, 2250, 4500, 7500, 12500, 18500, 25500, 33500, 44750, 57250,
-        71000, 86000, 105500, 126500, 149000, 173000, 202750, 234250, 267500,
-        302500, 344500, 388500, 434500, 482500, 538750, 597250, 658000, 721000,
-        793500,
+        0, 750, 2250, 4500, 7500, 12500, 18500, 25500, 33500,
+        44750, 57250, 71000, 86000, 105500, 126500, 149000,
+        173000, 202750, 234250, 267500, 302500, 344500, 388500,
+        434500, 482500, 538750, 597250, 658000, 721000, 793500,
     ];
     CONFIG.DND5E.CR_EXP_LEVELS = [
-        0, 10, 30, 70, 145, 295, 520, 820, 1320, 1920, 2620, 3420, 4545, 5795,
-        7170, 8670, 10620, 12720, 14970, 17370, 20345, 23495, 26820, 30320,
-        34520, 38920, 43520, 48320, 53945, 59795, 65870, 72170, 79420, 86920,
+        0, 10, 30, 70, 145, 295, 520, 820, 1320, 1920, 2620,
+        3420, 4545, 5795, 7170, 8670, 10620, 12720, 14970,
+        17370, 20345, 23495, 26820, 30320, 34520, 38920, 43520,
+        48320, 53945, 59795, 65870, 72170, 79420, 86920,
     ];
 
     CONFIG.DND5E.rules = {
