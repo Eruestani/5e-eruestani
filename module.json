@@ -1,40 +1,40 @@
 {
-    "id": "eruestani",
-    "title": "5e Eruestani",
-    "description": "A simple module created to adjust the config of the official 5e system.",
-    "version": "#{VERSION}#",
-    "library": false,
-    "manifestPlusVersion": "1.2.0",
-    "compatibility": {
-        "minimum": "12",
-        "verified": "12"
-    },
-    "packs": [],
-    "authors": [
-        {
-            "name": "Eruestani"
-        }
-    ],
-    "relationships": [
-        {
-            "id": "dnd5e",
-            "type": "system",
-            "compatibility": {
-                "minimum": "4.0.0"
-            }
-        }
-    ],
-    "esmodules": ["scripts/onload.js"],
-    "flags": {
-        "dnd5e": {
-            "sourceBooks": {
-                "Erue": "Eruestani's Homebrew"
-            }
-        }
-    },
-    "url": "#{URL}#",
-    "manifest": "#{MANIFEST}#",
-    "download": "#{DOWNLOAD}#",
-    "license": "LICENSE",
-    "readme": "README.md"
+	"id": "eruestani",
+	"title": "5e Eruestani",
+	"description": "A simple module created to adjust the config of the official 5e system.",
+	"version": "#{VERSION}#",
+	"library": false,
+	"manifestPlusVersion": "#{VERSION}#",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13"
+	},
+	"packs": [],
+	"authors": [
+		{
+			"name": "Eruestani"
+		}
+	],
+	"relationships": [
+		{
+			"id": "dnd5e",
+			"type": "system",
+			"compatibility": {
+				"minimum": "5.0.0"
+			}
+		}
+	],
+	"esmodules": ["scripts/onload.js"],
+	"flags": {
+		"dnd5e": {
+			"sourceBooks": {
+				"Erue": "Eruestani's Homebrew"
+			}
+		}
+	},
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"license": "LICENSE",
+	"readme": "README.md"
 }
