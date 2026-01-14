@@ -400,11 +400,10 @@ Hooks.once("init", () => {
         "Compendium.world.armors.Item.WX3i3YPSopWvIM36"; // UUID of item for rich sublists
 
     // Add heavy shields
-    /* This does not work as intended, but is left here for reference
+    // This does not work as intended, but is left here for reference
     CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield";
     CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields";
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
-    */
 
     // Override existing ammo references
     CONFIG.DND5E.ammoIds.arrow = ""; // UUID of item for rich sublists
