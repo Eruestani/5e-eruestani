@@ -218,7 +218,7 @@ Hooks.once("init", () => {
         "Compendium.world.weapons.Item.tagzD9iJGrVgulMJ"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.crook =
         "Compendium.world.weapons.Item.cfe1bbYsgVMOazn9"; // UUID of item for rich sublists
-    CONFIG.DND5E.weaponIds.daggerResevoir =
+    CONFIG.DND5E.weaponIds.daggerReservoir =
         "Compendium.world.weapons.Item.UYBZFRcvI8JyUyro"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.daggerPunching =
         "Compendium.world.weapons.Item.EebeQj5mrfWcVul8"; // UUID of item for rich sublists
