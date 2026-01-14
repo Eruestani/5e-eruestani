@@ -310,8 +310,6 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponIds.warhammer = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.whip = ""; // UUID of item for rich sublists
 
-    // Override weapon mastery references
-    /*
     CONFIG.DND5E.weaponMasteries = {
         cleave: {
             label: "Cleave",
@@ -346,7 +344,6 @@ Hooks.once("init", () => {
             reference: "",
         },
     };
-    */
 
     // Add new armors
     CONFIG.DND5E.armorIds.leatherscale =
