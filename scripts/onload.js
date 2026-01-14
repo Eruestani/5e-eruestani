@@ -1,21 +1,21 @@
 Hooks.once("init", () => {
     // Override ability references
     CONFIG.DND5E.abilities.str.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.dex.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.con.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.int.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.wis.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.cha.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.hon.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jsUDUjzPI4VKWgBg"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jsUDUjzPI4VKWgBg"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.san.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.lmFEwu5ynZtVocJG"; // UUID of journal entry page for rich tooltips
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.lmFEwu5ynZtVocJG"; // UUID of journal entry page for rich tooltips
 
     // Add new skills
     CONFIG.DND5E.skills.clt = {
@@ -23,7 +23,7 @@ Hooks.once("init", () => {
         ability: "int",
         fullKey: "culture", // Full key used in enrichers
         reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MlO8L4tix1kde6W2", // UUID of journal entry page for rich tooltips
+            "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MlO8L4tix1kde6W2", // UUID of journal entry page for rich tooltips
         icon: "systems/dnd5e/icons/svg/items/feature.svg", // Icon used in favorites on new character sheet
     };
     CONFIG.DND5E.skills.eng = {
@@ -31,168 +31,168 @@ Hooks.once("init", () => {
         ability: "int",
         fullKey: "engineering", // Full key used in enrichers
         reference:
-            "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.HPZRA9QUiBm8DaCr", // UUID of journal entry page for rich tooltips
+            "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.HPZRA9QUiBm8DaCr", // UUID of journal entry page for rich tooltips
         icon: "systems/dnd5e/icons/svg/items/feature.svg", // Icon used in favorites on new character sheet
     };
 
     // Override skill references
     CONFIG.DND5E.skills.acr.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN";
     CONFIG.DND5E.skills.acr.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ani.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE";
     CONFIG.DND5E.skills.ani.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.arc.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N";
     CONFIG.DND5E.skills.arc.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ath.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv";
     CONFIG.DND5E.skills.ath.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.dec.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ";
     CONFIG.DND5E.skills.dec.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.his.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY";
     CONFIG.DND5E.skills.his.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ins.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z";
     CONFIG.DND5E.skills.ins.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.itm.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg";
     CONFIG.DND5E.skills.itm.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.inv.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM";
     CONFIG.DND5E.skills.inv.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.med.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o";
     CONFIG.DND5E.skills.med.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.nat.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31";
     CONFIG.DND5E.skills.nat.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.prc.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY";
     CONFIG.DND5E.skills.prc.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.prf.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe";
     CONFIG.DND5E.skills.prf.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.per.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X";
     CONFIG.DND5E.skills.per.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.rel.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM";
     CONFIG.DND5E.skills.rel.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.slt.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A";
     CONFIG.DND5E.skills.slt.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.ste.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI";
     CONFIG.DND5E.skills.ste.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.skills.sur.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi";
     CONFIG.DND5E.skills.sur.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
     CONFIG.DND5E.creatureTypes.aberration.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC";
     CONFIG.DND5E.creatureTypes.aberration.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.beast.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv";
     CONFIG.DND5E.creatureTypes.beast.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.celestial.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM";
     CONFIG.DND5E.creatureTypes.celestial.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.construct.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d";
     CONFIG.DND5E.creatureTypes.construct.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.dragon.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S";
     CONFIG.DND5E.creatureTypes.dragon.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.elemental.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh";
     CONFIG.DND5E.creatureTypes.elemental.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.fey.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC";
     CONFIG.DND5E.creatureTypes.fey.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.fiend.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k";
     CONFIG.DND5E.creatureTypes.fiend.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.giant.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf";
     CONFIG.DND5E.creatureTypes.giant.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.humanoid.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw";
     CONFIG.DND5E.creatureTypes.humanoid.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.monstrosity.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P";
     CONFIG.DND5E.creatureTypes.monstrosity.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.ooze.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg";
     CONFIG.DND5E.creatureTypes.ooze.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.plant.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1";
     CONFIG.DND5E.creatureTypes.plant.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
     CONFIG.DND5E.creatureTypes.undead.reference =
-        "Compendium.world.rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q";
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q";
     CONFIG.DND5E.creatureTypes.undead.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
 
@@ -215,94 +215,94 @@ Hooks.once("init", () => {
     // Add new weapons
     // Simple Melee Weapons
     CONFIG.DND5E.weaponIds.cestus =
-        "Compendium.world.weapons.Item.tagzD9iJGrVgulMJ"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.tagzD9iJGrVgulMJ"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.crook =
-        "Compendium.world.weapons.Item.cfe1bbYsgVMOazn9"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.cfe1bbYsgVMOazn9"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.daggerReservoir =
-        "Compendium.world.weapons.Item.UYBZFRcvI8JyUyro"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.UYBZFRcvI8JyUyro"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.daggerPunching =
-        "Compendium.world.weapons.Item.EebeQj5mrfWcVul8"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.EebeQj5mrfWcVul8"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.daggerThrowing =
-        "Compendium.world.weapons.Item.L6DeD80tRNWQXUOl"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.L6DeD80tRNWQXUOl"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.fingerSpikes =
-        "Compendium.world.weapons.Item.h3lQueZFd5nbbZrK"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.h3lQueZFd5nbbZrK"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.fustibalus =
-        "Compendium.world.weapons.Item.CWBfEnSBrOOJtb0J"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.CWBfEnSBrOOJtb0J"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.gauntletArmor =
-        "Compendium.world.weapons.Item.bLeFWtt3IhhIfHGv"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.bLeFWtt3IhhIfHGv"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.gauntletClawed =
-        "Compendium.world.weapons.Item.HhtmLlK7gEciFkIE"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.HhtmLlK7gEciFkIE"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.gauntletSpikedArmor =
-        "Compendium.world.weapons.Item.B9jtmoJPKpuw5vXY"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.B9jtmoJPKpuw5vXY"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.hatchet =
-        "Compendium.world.weapons.Item.hy53JJHnByjCZh36"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.hy53JJHnByjCZh36"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.hook =
-        "Compendium.world.weapons.Item.L9IefCWycTybnlLa"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.L9IefCWycTybnlLa"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.knobkerrie =
-        "Compendium.world.weapons.Item.dsdhklbMq1gE1U65"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.dsdhklbMq1gE1U65"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.maceLiturgical =
-        "Compendium.world.weapons.Item.6PALGHpx3h0a6e9P"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.6PALGHpx3h0a6e9P"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.sap =
-        "Compendium.world.weapons.Item.I4KAmDqNWwchxiHP"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.I4KAmDqNWwchxiHP"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.scourge =
-        "Compendium.world.weapons.Item.YUbchNO6eoHOsghC"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.YUbchNO6eoHOsghC"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.scythe =
-        "Compendium.world.weapons.Item.eAnwm6Ae3Rg2GuCK"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.eAnwm6Ae3Rg2GuCK"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.spearShort =
-        "Compendium.world.weapons.Item.zMfSptEL8geAFQFs"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.zMfSptEL8geAFQFs"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.stakeWooden =
-        "Compendium.world.weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.stiletto =
-        "Compendium.world.weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.ogOj9W3nihSmWBxJ"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.tailSpikes =
-        "Compendium.world.weapons.Item.K8nzvm6Ybhi41gpB"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.K8nzvm6Ybhi41gpB"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.warpickLight =
-        "Compendium.world.weapons.Item.jKrsfrT7llXoeDhW"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.jKrsfrT7llXoeDhW"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.weightedKnuckles =
-        "Compendium.world.weapons.Item.SLTBJ4yak9XbKti7"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.SLTBJ4yak9XbKti7"; // UUID of item for rich sublists
 
     // Override existing weapon references
     CONFIG.DND5E.weaponIds.battleaxe = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.blowgun = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.club =
-        "Compendium.world.weapons.Item.KjJj2QzJbhXfXWIv"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.KjJj2QzJbhXfXWIv"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.dagger =
-        "Compendium.world.weapons.Item.zAyacNtrMru8lS8A"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.zAyacNtrMru8lS8A"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.dart = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.flail = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.glaive = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.greataxe = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.greatclub =
-        "Compendium.world.weapons.Item.OPxQGREFGpDsunjx"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.OPxQGREFGpDsunjx"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.greatsword = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.halberd = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.handaxe =
-        "Compendium.world.weapons.Item.Pb4unYtD9VgED3Pt"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.Pb4unYtD9VgED3Pt"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.handcrossbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.heavycrossbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.javelin =
-        "Compendium.world.weapons.Item.M7V5loiy3WB2BykB"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.M7V5loiy3WB2BykB"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.lance = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.lightcrossbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.lighthammer =
-        "Compendium.world.weapons.Item.prpqqlfL1rtWWzeX"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.prpqqlfL1rtWWzeX"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.longbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.longsword = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.mace =
-        "Compendium.world.weapons.Item.yTYGTyCYti88eo8F"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.yTYGTyCYti88eo8F"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.maul = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.morningstar = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.net = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.pike = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.quarterstaff =
-        "Compendium.world.weapons.Item.GUcwhhSpvUDy2nol"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.GUcwhhSpvUDy2nol"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.rapier = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.scimitar = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.shortsword = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.sickle =
-        "Compendium.world.weapons.Item.sAC9oJqBXcPG9CnF"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.sAC9oJqBXcPG9CnF"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.spear =
-        "Compendium.world.weapons.Item.lNvz2elKWfF0vvpi"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.lNvz2elKWfF0vvpi"; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.shortbow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.sling = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.trident = ""; // UUID of item for rich sublists
@@ -347,57 +347,57 @@ Hooks.once("init", () => {
 
     // Add new armors
     CONFIG.DND5E.armorIds.leatherscale =
-        "Compendium.world.armors.Item.5a3pOSbZ0cK1PC7T"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.5a3pOSbZ0cK1PC7T"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.layeredfur =
-        "Compendium.world.armors.Item.SshLrR67PlQu5LxX"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.SshLrR67PlQu5LxX"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.brigandine =
-        "Compendium.world.armors.Item.C7vNtpUlSLv1JWjC"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.C7vNtpUlSLv1JWjC"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.coinarmor =
-        "Compendium.world.armors.Item.qxVvmphhioDPjMo7"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.qxVvmphhioDPjMo7"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.layeredhide =
-        "Compendium.world.armors.Item.XNIPdFTFOI65BTdd"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.XNIPdFTFOI65BTdd"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.bandedmail =
-        "Compendium.world.armors.Item.qwxcyz7PAuOD5g6m"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.qwxcyz7PAuOD5g6m"; // UUID of item for rich sublists
 
     // Override existing armor references
     CONFIG.DND5E.armorIds.breastplate =
-        "Compendium.world.armors.Item.4gBtppT9976u0wjD"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.4gBtppT9976u0wjD"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.chainmail =
-        "Compendium.world.armors.Item.xqPYMPS46r3ReJ0w"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.xqPYMPS46r3ReJ0w"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.chainshirt =
-        "Compendium.world.armors.Item.E5HKMLXmkDRHWQKh"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.E5HKMLXmkDRHWQKh"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.halfplate =
-        "Compendium.world.armors.Item.SrGojUwZiMPkro79"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.SrGojUwZiMPkro79"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.hide =
-        "Compendium.world.armors.Item.4pEWzudGiZkCbnOu"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.4pEWzudGiZkCbnOu"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.leather =
-        "Compendium.world.armors.Item.AZ16OmMT2tBRidZ1"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.AZ16OmMT2tBRidZ1"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.padded =
-        "Compendium.world.armors.Item.Brs3RWod7asy2D5s"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.Brs3RWod7asy2D5s"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.plate =
-        "Compendium.world.armors.Item.saJXXgOM4kbHqnmz"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.saJXXgOM4kbHqnmz"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.ringmail =
-        "Compendium.world.armors.Item.wnIercqQYUCRtveh"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.wnIercqQYUCRtveh"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.scalemail =
-        "Compendium.world.armors.Item.NPoB0t8YWdbs4ibe"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.NPoB0t8YWdbs4ibe"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.splint =
-        "Compendium.world.armors.Item.3LY1ZfQBwC0J9OPq"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.3LY1ZfQBwC0J9OPq"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.studded =
-        "Compendium.world.armors.Item.azDEdZOeMQatmWoe"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.azDEdZOeMQatmWoe"; // UUID of item for rich sublists
 
     // Add new shields
     CONFIG.DND5E.shieldIds.buckler =
-        "Compendium.world.armors.Item.2cZxFnvqVqIwcFds"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.2cZxFnvqVqIwcFds"; // UUID of item for rich sublists
 
     CONFIG.DND5E.shieldIds.pavise =
-        "Compendium.world.armors.Item.PKKzXdhrghfrZud5"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.PKKzXdhrghfrZud5"; // UUID of item for rich sublists
 
     CONFIG.DND5E.shieldIds.towersheild =
-        "Compendium.world.armors.Item.TS7XbgF7kDyuWkn3"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.TS7XbgF7kDyuWkn3"; // UUID of item for rich sublists
 
     // Override existing shield references
     CONFIG.DND5E.shieldIds.shield =
-        "Compendium.world.armors.Item.WX3i3YPSopWvIM36"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.WX3i3YPSopWvIM36"; // UUID of item for rich sublists
 
     // Add heavy shields
     // This does not work as intended, but is left here for reference
@@ -410,324 +410,324 @@ Hooks.once("init", () => {
     CONFIG.DND5E.ammoIds.blowgunNeedle = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.crossbowBolt = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.slingBullet = ""; // UUID of item for rich sublists
-
+    
     // Add new tools
     CONFIG.DND5E.tools.appr = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.S6GTrayArdJ9S9tg", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S6GTrayArdJ9S9tg", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.birdpipes = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.rGKj9vdp3pVD8Dus", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rGKj9vdp3pVD8Dus", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.dartboard = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.p0o7oQTunkUuWZsC", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.p0o7oQTunkUuWZsC", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.glaur = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.rW5fL7t408FxteDo", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rW5fL7t408FxteDo", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.handdrum = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.CpNf1kg2DaUlft7t", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.CpNf1kg2DaUlft7t", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.harp = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.4IjQ1gW7SAMUq4vU", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4IjQ1gW7SAMUq4vU", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.hnefatafl = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.7sQXJP2Jzm59NXUy", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.7sQXJP2Jzm59NXUy", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.kubb = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.olmRJngU1Bdn4EWI", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.olmRJngU1Bdn4EWI", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.longhorn = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.S7lWlujDdmypB4H2", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S7lWlujDdmypB4H2", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.ninemen = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.dqjL3RlCaKUvxcCm", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.dqjL3RlCaKUvxcCm", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.ringtoss = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.6lsX476Oy8pL16Eo", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6lsX476Oy8pL16Eo", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.sculpter = {
         ability: "str", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.WTPtlnhvKpArIPTB", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.WTPtlnhvKpArIPTB", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.songhorn = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.EbyA1cleMOXCAIlp", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.EbyA1cleMOXCAIlp", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.surg = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.tFqZN1WwHTO12L7k", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tFqZN1WwHTO12L7k", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.tantan = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.ZNewSFtF2CHU6K4C", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZNewSFtF2CHU6K4C", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.tattooartist = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.voV6fRbWrXO2F9A8", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.voV6fRbWrXO2F9A8", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.tarokka = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.a8O6ghE5lygNkihT", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.a8O6ghE5lygNkihT", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.thelarr = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.4VtMgRjJ7mWYIx1S", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4VtMgRjJ7mWYIx1S", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.threedragon = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.K4SqJx3os7Krmygl", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.K4SqJx3os7Krmygl", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.tocken = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.wUV4hce9A2Zke0E3", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.wUV4hce9A2Zke0E3", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.trictrac = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.ZBDXsMMwck50f8MM", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZBDXsMMwck50f8MM", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.wargong = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.C2l7QyR7DpWwLECW", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C2l7QyR7DpWwLECW", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.yarting = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.sLwuYWRBKfMeRL49", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sLwuYWRBKfMeRL49", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.zulkoon = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.ljoiJUNecYOU2Jg8", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ljoiJUNecYOU2Jg8", // UUID of item for rich sublists
     };
 
     // Override existing tool references
     CONFIG.DND5E.tools.alchemist = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.83wDMTlZ2QFGHqHK", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.83wDMTlZ2QFGHqHK", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.bagpipes = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.h3b9HeQVKFynnwC5", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.h3b9HeQVKFynnwC5", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.brewer = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.tlsJ0DINCKWWo3uB", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tlsJ0DINCKWWo3uB", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.calligrapher = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.lNAT3IDbFQGb6lyP", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.lNAT3IDbFQGb6lyP", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.card = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.kg8fuacsrI8q5saW", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.kg8fuacsrI8q5saW", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.carpenter = {
         ability: "str", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.PVez6ryjmoRy3pR6", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.PVez6ryjmoRy3pR6", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.cartographer = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.XMbICW1fH8Fvo0fm", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XMbICW1fH8Fvo0fm", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.chess = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.rhmCQX53uqle8Zj9", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rhmCQX53uqle8Zj9", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.cobbler = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.mt6xvPiFvPHlXvPc", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.mt6xvPiFvPHlXvPc", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.cook = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.gPBt9xh80xeay7FF", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gPBt9xh80xeay7FF", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.dice = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.sqkh9Uw2v5tJtM1g", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sqkh9Uw2v5tJtM1g", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.disg = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.3wCYe8gHzvnHzdta", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.3wCYe8gHzvnHzdta", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.drum = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.FPSsSO6Ko8I528GK", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.FPSsSO6Ko8I528GK", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.dulcimer = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.C16e74Omdx8BHpl9", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C16e74Omdx8BHpl9", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.flute = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.eaQJ97Eu5d9Nxq2V", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eaQJ97Eu5d9Nxq2V", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.forg = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.fYPuRDaoCsiFLYr2", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.fYPuRDaoCsiFLYr2", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.glassblower = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.Y8Qd8lNCQWidzH85", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Y8Qd8lNCQWidzH85", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.herb = {
         ability: "wis", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.0uImA0a6hIqlvSRZ", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.0uImA0a6hIqlvSRZ", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.horn = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.I0HDwyo5TwJ4QjYh", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.I0HDwyo5TwJ4QjYh", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.jeweler = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.AmmUERLMacP4VCoX", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.AmmUERLMacP4VCoX", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.leatherworker = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.MYvvbh4KvYURXZ2y", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.MYvvbh4KvYURXZ2y", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.lute = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.8GmI5BQzmoyyeaWH", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.8GmI5BQzmoyyeaWH", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.lyre = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.InRaLGzqtEAii0rU", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.InRaLGzqtEAii0rU", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.mason = {
         ability: "str", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.DaqfHwBji0ALHT3J", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.DaqfHwBji0ALHT3J", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.navg = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.XWxy6oLq09TU9FFY", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XWxy6oLq09TU9FFY", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.painter = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.LEcS6aav9vkXRMhj", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LEcS6aav9vkXRMhj", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.panflute = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.gv3fZfpRVgItlmmY", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gv3fZfpRVgItlmmY", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.pois = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.byJfvPGexI6wxWWl", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.byJfvPGexI6wxWWl", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.potter = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.Qvldm2yV631DuLd1", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Qvldm2yV631DuLd1", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.shawm = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.c4oxpQBmaZr6Ivyw", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.c4oxpQBmaZr6Ivyw", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.smith = {
         ability: "str", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.axNK8fBb9lYzKQpu", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.axNK8fBb9lYzKQpu", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.tinker = {
         ability: "int", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.LJn71QPuHLg6rXYj", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LJn71QPuHLg6rXYj", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.thief = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.4tjwsnHhD4MZvSrz", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4tjwsnHhD4MZvSrz", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.viol = {
         ability: "cha", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.jymMtKZlB1m8d5mH", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.jymMtKZlB1m8d5mH", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.weaver = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.6gHt5bed3dRmJnnz", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6gHt5bed3dRmJnnz", // UUID of item for rich sublists
     };
     CONFIG.DND5E.tools.woodcarver = {
         ability: "dex", // Ability used for tool checks
-        id: "Compendium.world.equipment-tools.Item.eyTmmxEx96fgwWxn", // UUID of item for rich sublists
+        id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eyTmmxEx96fgwWxn", // UUID of item for rich sublists
     };
 
     // Add new containers
     CONFIG.DND5E.containerTypes.bandolierItem =
-        "Compendium.world.equipment-containers.Item.XSHfp4hez58ydS7B"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XSHfp4hez58ydS7B"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.bandolierPotion =
-        "Compendium.world.equipment-containers.Item.DMPlHu151Qs2Q0eS"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.DMPlHu151Qs2Q0eS"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.barrelDry =
-        "Compendium.world.equipment-containers.Item.2Vu1Ekz0dJDI2WzS"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.2Vu1Ekz0dJDI2WzS"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.box =
-        "Compendium.world.equipment-containers.Item.8g3u8NjB0j4BHx5a"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.8g3u8NjB0j4BHx5a"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.boxScroll =
-        "Compendium.world.equipment-containers.Item.f5YcSV0ZFZZ7BOxL"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.f5YcSV0ZFZZ7BOxL"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.cask =
-        "Compendium.world.equipment-containers.Item.dZG1629G6ZMKdS2v"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.dZG1629G6ZMKdS2v"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.compartment =
-        "Compendium.world.equipment-containers.Item.NoX8QR1xNS96vA9m"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.NoX8QR1xNS96vA9m"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.crate =
-        "Compendium.world.equipment-containers.Item.oIkvDIEuLW1zHRb2"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.oIkvDIEuLW1zHRb2"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.haversack =
-        "Compendium.world.equipment-containers.Item.OA2l9Wa2GbMBUdE3"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.OA2l9Wa2GbMBUdE3"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.keg =
-        "Compendium.world.equipment-containers.Item.c3PUrOxzQV2qVMCI"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.c3PUrOxzQV2qVMCI"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.ketch =
-        "Compendium.world.equipment-containers.Item.agZgHMrFwU9pmy9k"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.agZgHMrFwU9pmy9k"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.lockbox =
-        "Compendium.world.equipment-containers.Item.XoRSNKxCRgOpz9Bs"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XoRSNKxCRgOpz9Bs"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.rucksack =
-        "Compendium.world.equipment-containers.Item.3OWlZKEs3pZPXPaR"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3OWlZKEs3pZPXPaR"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.sackLarge =
-        "Compendium.world.equipment-containers.Item.zXzmannRavel5W4U"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.zXzmannRavel5W4U"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.satchel =
-        "Compendium.world.equipment-containers.Item.Aq8xwUtSYj8m3Ll9"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.Aq8xwUtSYj8m3Ll9"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.satchelWaterproof =
-        "Compendium.world.equipment-containers.Item.jT8UblmS4YG2vlZi"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.jT8UblmS4YG2vlZi"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.waterskin =
-        "Compendium.world.equipment-containers.Item.0N2ucoivTaMtqgak"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.0N2ucoivTaMtqgak"; // UUID of item for rich sublists
 
     // Override existing container references
     CONFIG.DND5E.containerTypes.backpack =
-        "Compendium.world.equipment-containers.Item.krLHFroJOTD2ZiIh"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.krLHFroJOTD2ZiIh"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.barrel =
-        "Compendium.world.equipment-containers.Item.yD8flEHT95mchukr"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.yD8flEHT95mchukr"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.basket =
-        "Compendium.world.equipment-containers.Item.pwPfz3jpDeZTvmGs"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.pwPfz3jpDeZTvmGs"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.boltcase =
-        "Compendium.world.equipment-containers.Item.gaZPKIs4yVk5DTGp"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.gaZPKIs4yVk5DTGp"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.bottle =
-        "Compendium.world.equipment-containers.Item.e9q4WvuHroflqWp3"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.e9q4WvuHroflqWp3"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.bucket =
-        "Compendium.world.equipment-containers.Item.JIPsKZMMgkvPR3ji"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.JIPsKZMMgkvPR3ji"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.case =
-        "Compendium.world.equipment-containers.Item.3lFNgZKQpB79511C"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3lFNgZKQpB79511C"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.chest =
-        "Compendium.world.equipment-containers.Item.kfYQaxxH9PuAiTac"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kfYQaxxH9PuAiTac"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.flask =
-        "Compendium.world.equipment-containers.Item.KaqUtM8qSKjrOIVO"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.KaqUtM8qSKjrOIVO"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.jug =
-        "Compendium.world.equipment-containers.Item.kQuOf3BBXgFjRmug"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kQuOf3BBXgFjRmug"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.pitcher =
-        "Compendium.world.equipment-containers.Item.43dCcx3Xzmb1ZAMk"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.43dCcx3Xzmb1ZAMk"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.pot =
-        "Compendium.world.equipment-containers.Item.tiWy2PdmeVX26brH"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.tiWy2PdmeVX26brH"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.pouch =
-        "Compendium.world.equipment-containers.Item.FAj1CjxkMOU4XgjL"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.FAj1CjxkMOU4XgjL"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.quiver =
-        "Compendium.world.equipment-containers.Item.EAie6KgWyNVCO3hV"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.EAie6KgWyNVCO3hV"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.sack =
-        "Compendium.world.equipment-containers.Item.lBXVMf1wGUyswcPR"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.lBXVMf1wGUyswcPR"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.saddlebags =
-        "Compendium.world.equipment-containers.Item.BWOXbnggziUvVPU6"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.BWOXbnggziUvVPU6"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.tankard =
-        "Compendium.world.equipment-containers.Item.eDMnB91tAzpnJAfx"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.eDMnB91tAzpnJAfx"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.vial =
-        "Compendium.world.equipment-containers.Item.B8E7jsMW4VWC2DPe"; // UUID of item for rich sublists
+        "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.B8E7jsMW4VWC2DPe"; // UUID of item for rich sublists
 
     // Add dunamancy spell school
     CONFIG.DND5E.spellSchools.dun = {
