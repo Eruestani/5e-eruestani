@@ -426,6 +426,8 @@ Hooks.once("init", () => {
     
     console.log("ERUE D&D5E | Overridden existing shield references");
 
+    /*
+
     // Add heavy shields
     // This does not work as intended, but is left here for reference
     CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield";
@@ -433,6 +435,8 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
 
     console.log("ERUE D&D5E | Added heavy shields");
+
+    */
 
     // Override existing ammo references
     CONFIG.DND5E.ammoIds.arrow = ""; // UUID of item for rich sublists
