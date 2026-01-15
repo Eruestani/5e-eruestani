@@ -388,18 +388,70 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overhaul of weaponTypes, weaponProficiencies & weaponProficienciesMap');
 
-	// Override weapon mastery references
+	// Overhaul of weaponMasteries for Comprehensive Equipment Manual
 	CONFIG.DND5E.weaponMasteries = {
+		bore: {
+			label: 'Bore',
+			reference: '',
+		},
+		brawl: {
+			label: 'Brawl',
+			reference: '',
+		},
+		burst: {
+			label: 'Burst',
+			reference: '',
+		},
 		cleave: {
 			label: 'Cleave',
+			reference: '',
+		},
+		concuss: {
+			label: 'Concuss',
+			reference: '',
+		},
+		counter: {
+			label: 'Counter',
+			reference: '',
+		},
+		disarm: {
+			label: 'Disarm',
+			reference: '',
+		},
+		float: {
+			label: 'Float',
+			reference: '',
+		},
+		flourish: {
+			label: 'Flourish',
 			reference: '',
 		},
 		graze: {
 			label: 'Graze',
 			reference: '',
 		},
+		harry: {
+			label: 'Harry',
+			reference: '',
+		},
+		jab: {
+			label: 'Jab',
+			reference: '',
+		},
+		lacerate: {
+			label: 'Lacerate',
+			reference: '',
+		},
 		nick: {
 			label: 'Nick',
+			reference: '',
+		},
+		overrun: {
+			label: 'Overrun',
+			reference: '',
+		},
+		pin: {
+			label: 'Pin',
 			reference: '',
 		},
 		push: {
@@ -410,6 +462,10 @@ Hooks.once('init', () => {
 			label: 'Sap',
 			reference: '',
 		},
+		shift: {
+			label: 'Shift',
+			reference: '',
+		},
 		slow: {
 			label: 'Slow',
 			reference: '',
@@ -418,13 +474,17 @@ Hooks.once('init', () => {
 			label: 'Topple',
 			reference: '',
 		},
+		trace: {
+			label: 'Trace',
+			reference: '',
+		},
 		vex: {
 			label: 'Vex',
 			reference: '',
 		},
 	};
 
-	console.log('ERUE D&D5E | Overridden existing weapon mastery references');
+	console.log('ERUE D&D5E | Overhaul of weaponMasteries for Comprehensive Equipment Manual');
 
 	/*
 
