@@ -1689,14 +1689,41 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overridden existing weight units');
 
-	// Implement silver standard
-	CONFIG.DND5E.currencies.cp.conversion = 100;
-	CONFIG.DND5E.currencies.sp.conversion = 1;
-	CONFIG.DND5E.currencies.ep.conversion = 0.02;
-	CONFIG.DND5E.currencies.gp.conversion = 0.01;
-	CONFIG.DND5E.currencies.pp.conversion = 0.0001;
+	// Overhaul of currency to implement silver standard
+	CONFIG.DND5E.currencies = {
+		pp: {
+			label: 'Platinum',
+			abbreviation: 'pp',
+			conversion: 0.0001,
+			icon: 'systems/dnd5e/icons/currency/platinum.webp',
+		},
+		gp: {
+			label: 'Gold',
+			abbreviation: 'gp',
+			conversion: 0.01,
+			icon: 'systems/dnd5e/icons/currency/gold.webp',
+		},
+		ep: {
+			label: 'Electrum',
+			abbreviation: 'ep',
+			conversion: 0.02,
+			icon: 'systems/dnd5e/icons/currency/electrum.webp',
+		},
+		sp: {
+			label: 'Silver',
+			abbreviation: 'sp',
+			conversion: 1,
+			icon: 'systems/dnd5e/icons/currency/silver.webp',
+		},
+		cp: {
+			label: 'Copper',
+			abbreviation: 'cp',
+			conversion: 100,
+			icon: 'systems/dnd5e/icons/currency/copper.webp',
+		},
+	};
 
-	console.log('ERUE D&D5E | Overriden currency exchange to implement silver standard');
+	console.log('ERUE D&D5E | Overhaul of currency to implement silver standard');
 
 	// Modify experience thresholds & levels
 	CONFIG.DND5E.maxLevel = 30;
