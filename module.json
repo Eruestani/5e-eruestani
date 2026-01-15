@@ -1,51 +1,44 @@
 {
-	"id": "eruestani",
-	"title": "5e Eruestani",
-	"description": "A simple module created to adjust the config of the official 5e system.",
-	"version": "#{VERSION}#",
-	"library": false,
-	"manifestPlusVersion": "#{VERSION}#",
-	"compatibility": {
-		"minimum": "13",
-		"verified": "13"
-	},
-	"packs": [],
-	"authors": [
-		{
-			"name": "Eruestani"
-		}
-	],
-	"relationships": {
-		"systems": {
-			"id": "dnd5e",
-			"type": "system",
-			"compatibility": {
-				"minimum": "5.2.0",
-				"verified": "5.2.4"
-			}
-		},
-		"requires": [
-			{
-				"id": "forge-vtt-shared-compendiums-erue-d-and-d5e",
-				"type": "module",
-				"compatibility": {
-					"minimum": "1.0",
-					"verified": "1.0"
-				}
-			}
-		]
-	},
-	"esmodules": ["scripts/onload.js"],
-	"flags": {
-		"dnd5e": {
-			"sourceBooks": {
-				"Erue": "Eruestani's Homebrew"
-			}
-		}
-	},
-	"url": "#{URL}#",
-	"manifest": "#{MANIFEST}#",
-	"download": "#{DOWNLOAD}#",
-	"license": "LICENSE",
-	"readme": "README.md"
+    "id": "eruestani-dnd",
+    "title": "5e Eruestani",
+    "description": "A simple module created to adjust the config of the official 5e system.",
+    "version": "#{VERSION}#",
+    "library": false,
+    "manifestPlusVersion": "#{VERSION}#",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13"
+    },
+    "packs": [],
+    "authors": [
+        {
+            "name": "Eruestani"
+        }
+    ],
+    "relationships": {
+        "systems": {
+            "id": "dnd5e",
+            "type": "system",
+            "compatibility": {
+                "minimum": "5.2.0",
+                "verified": "5.2.4"
+            }
+        },
+        "requires": [
+            {
+                "id": "eruestani-content",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "1.0",
+                    "verified": "1.0"
+                }
+            }
+        ]
+    },
+    "esmodules": ["scripts/onload.js"],
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
+    "license": "LICENSE",
+    "readme": "README.md"
 }
