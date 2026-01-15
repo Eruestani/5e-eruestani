@@ -112,64 +112,115 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overridden existing skill references');
 
-	// Override creature type references
-	CONFIG.DND5E.creatureTypes.aberration.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC';
-	CONFIG.DND5E.creatureTypes.aberration.icon = 'systems/dnd5e/icons/svg/items/race.svg';
+	// Overhaul of creatureTypes
+	CONFIG.DND5E.creatureTypes = {
+		aberration: {
+			label: 'Aberration',
+			plural: 'Aberrations',
+			icon: 'icons/creatures/tentacles/tentacle-eyes-yellow-pink.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC',
+			detectAlignment: true,
+		},
+		beast: {
+			label: 'Beast',
+			plural: 'Beasts',
+			icon: 'icons/creatures/claws/claw-bear-paw-swipe-red.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv',
+		},
+		celestial: {
+			label: 'Celestial',
+			plural: 'Celestials',
+			icon: 'icons/creatures/abilities/wings-birdlike-blue.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM',
+			detectAlignment: true,
+		},
+		construct: {
+			label: 'Construct',
+			plural: 'Constructs',
+			icon: 'icons/creatures/magical/construct-stone-earth-gray.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d',
+		},
+		dragon: {
+			label: 'Dragon',
+			plural: 'Dragons',
+			icon: 'icons/creatures/abilities/dragon-fire-breath-orange.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S',
+		},
+		elemental: {
+			label: 'Elemental',
+			plural: 'Elementals',
+			icon: 'icons/creatures/magical/spirit-fire-orange.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh',
+			detectAlignment: true,
+		},
+		fey: {
+			label: 'Fey',
+			plural: 'Fey',
+			icon: 'icons/creatures/magical/fae-fairy-winged-glowing-green.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC',
+			detectAlignment: true,
+		},
+		fiend: {
+			label: 'Fiend',
+			plural: 'Fiends',
+			icon: 'icons/magic/death/skull-horned-goat-pentagram-red.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k',
+			detectAlignment: true,
+		},
+		giant: {
+			label: 'Giant',
+			plural: 'Giants',
+			icon: 'icons/creatures/magical/humanoid-giant-forest-blue.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf',
+		},
+		humanoid: {
+			label: 'Humanoid',
+			plural: 'Humanoids',
+			icon: 'icons/environment/people/group.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw',
+		},
+		monstrosity: {
+			label: 'Monstrosity',
+			plural: 'Monstrosities',
+			icon: 'icons/creatures/abilities/mouth-teeth-rows-red.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P',
+		},
+		ooze: {
+			label: 'Ooze',
+			plural: 'Oozes',
+			icon: 'icons/creatures/slimes/slime-movement-pseudopods-green.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg',
+		},
+		plant: {
+			label: 'Plant',
+			plural: 'Plants',
+			icon: 'icons/magic/nature/tree-animated-strike.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1',
+		},
+		undead: {
+			label: 'Undead',
+			plural: 'Undead',
+			icon: 'icons/magic/death/skull-horned-worn-fire-blue.webp',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q',
+			detectAlignment: true,
+		},
+	};
 
-	CONFIG.DND5E.creatureTypes.beast.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.6bTHn7pZek9YX2tv';
-	CONFIG.DND5E.creatureTypes.beast.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.celestial.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.T5CJwxjhBbi6oqaM';
-	CONFIG.DND5E.creatureTypes.celestial.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.construct.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.jQGAJZBZTqDFod8d';
-	CONFIG.DND5E.creatureTypes.construct.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.dragon.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.k2IRXZwGk9W0PM2S';
-	CONFIG.DND5E.creatureTypes.dragon.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.elemental.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.7z1LXGGkXpHuzkFh';
-	CONFIG.DND5E.creatureTypes.elemental.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.fey.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.OFsRUt3pWljgm8VC';
-	CONFIG.DND5E.creatureTypes.fey.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.fiend.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ElHKBJeiJPC7gj6k';
-	CONFIG.DND5E.creatureTypes.fiend.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.giant.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AOXn3Mv5vPZwo0Uf';
-	CONFIG.DND5E.creatureTypes.giant.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.humanoid.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.iFzQs4AenN8ALRvw';
-	CONFIG.DND5E.creatureTypes.humanoid.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.monstrosity.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.TX0yPEFTn79AMZ8P';
-	CONFIG.DND5E.creatureTypes.monstrosity.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.ooze.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.cgzIC1ecG03D97Fg';
-	CONFIG.DND5E.creatureTypes.ooze.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.plant.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.1oT7t6tHE4kZuSN1';
-	CONFIG.DND5E.creatureTypes.plant.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	CONFIG.DND5E.creatureTypes.undead.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q';
-	CONFIG.DND5E.creatureTypes.undead.icon = 'systems/dnd5e/icons/svg/items/race.svg';
-
-	console.log('ERUE D&D5E | Overridden existing creature type references');
+	console.log('ERUE D&D5E | Overhaul of creatureTypes');
 
 	// Add Weapon-Like weapon type and proficiency, with mapping
 	CONFIG.DND5E.weaponProficiencies.weaponlike = 'Weapon-Like';
