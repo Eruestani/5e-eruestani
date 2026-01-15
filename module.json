@@ -15,15 +15,26 @@
 			"name": "Eruestani"
 		}
 	],
-	"relationships": [
-		{
+	"relationships": {
+		"systems": {
 			"id": "dnd5e",
 			"type": "system",
 			"compatibility": {
-				"minimum": "5.0.0"
+				"minimum": "5.2.0",
+				"verified": "5.2.4"
 			}
-		}
-	],
+		},
+		"requires": [
+			{
+				"id": "forge-vtt-shared-compendiums-erue-d-and-d5e",
+				"type": "module",
+				"compatibility": {
+					"minimum": "1.0",
+					"verified": "1.0"
+				}
+			}
+		]
+	},
 	"esmodules": ["scripts/onload.js"],
 	"flags": {
 		"dnd5e": {
