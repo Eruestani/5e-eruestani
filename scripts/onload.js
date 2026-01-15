@@ -1,4 +1,7 @@
 Hooks.once("init", () => {
+
+    console.log("ERUE D&D5E | Initializing ERUE D&D5E modifications");
+
     // Override ability references
     CONFIG.DND5E.abilities.str.reference =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH"; // UUID of journal entry page for rich tooltips
@@ -12,6 +15,8 @@ Hooks.once("init", () => {
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s"; // UUID of journal entry page for rich tooltips
     CONFIG.DND5E.abilities.cha.reference =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG"; // UUID of journal entry page for rich tooltips
+    
+    console.log("ERUE D&D5E | Overridden existing ability references.");
 
     // Add new skills
     CONFIG.DND5E.skills.clt = {
@@ -30,6 +35,8 @@ Hooks.once("init", () => {
             "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.HPZRA9QUiBm8DaCr", // UUID of journal entry page for rich tooltips
         icon: "systems/dnd5e/icons/svg/items/feature.svg", // Icon used in favorites on new character sheet
     };
+
+    console.log("ERUE D&D5E | Added new skills");
 
     // Override skill references
     CONFIG.DND5E.skills.acr.reference =
@@ -122,6 +129,9 @@ Hooks.once("init", () => {
     CONFIG.DND5E.skills.sur.icon =
         "systems/dnd5e/icons/svg/items/feature.svg";
 
+    console.log("ERUE D&D5E | Overridden existing skill references");
+
+    // Override creature type references
     CONFIG.DND5E.creatureTypes.aberration.reference =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yy50qVC1JhPHt4LC";
     CONFIG.DND5E.creatureTypes.aberration.icon =
@@ -191,6 +201,8 @@ Hooks.once("init", () => {
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.D2BdqS1GeD5rcZ6q";
     CONFIG.DND5E.creatureTypes.undead.icon =
         "systems/dnd5e/icons/svg/items/race.svg";
+    
+    console.log("ERUE D&D5E | Overridden existing creature type references");
 
     // Add weapon-like weapon proficiency
     CONFIG.DND5E.weaponProficiencies.weaponlike = "Weapon-Like";
@@ -201,12 +213,16 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponTypes.weaponlikeM = "Weapon-Like Melee";
     CONFIG.DND5E.weaponTypes.weaponlikeR = "Weapon-Like Ranged";
 
+    console.log("ERUE D&D5E | Added weapon-like weapon proficiency");
+
     // Add expert weapon proficiency
     CONFIG.DND5E.weaponProficiencies.exp = "Expert";
     CONFIG.DND5E.weaponProficienciesMap.expertM = "exp";
     CONFIG.DND5E.weaponProficienciesMap.expertR = "exp";
     CONFIG.DND5E.weaponTypes.expertM = "Expert Melee";
     CONFIG.DND5E.weaponTypes.expertR = "Expert Ranged";
+
+    console.log("ERUE D&D5E | Added expert weapon proficiency");
 
     // Add new weapons
     // Simple Melee Weapons
@@ -257,6 +273,8 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponIds.weightedKnuckles =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-18-gear-weapons.Item.SLTBJ4yak9XbKti7"; // UUID of item for rich sublists
 
+    console.log("ERUE D&D5E | Added new weapons");
+
     // Override existing weapon references
     CONFIG.DND5E.weaponIds.battleaxe = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.blowgun = ""; // UUID of item for rich sublists
@@ -306,6 +324,9 @@ Hooks.once("init", () => {
     CONFIG.DND5E.weaponIds.warhammer = ""; // UUID of item for rich sublists
     CONFIG.DND5E.weaponIds.whip = ""; // UUID of item for rich sublists
 
+    console.log("ERUE D&D5E | Overridden existing weapon references");
+
+    // Override weapon mastery references
     CONFIG.DND5E.weaponMasteries = {
         cleave: {
             label: "Cleave",
@@ -341,6 +362,8 @@ Hooks.once("init", () => {
         },
     };
 
+    console.log("ERUE D&D5E | Overridden existing weapon mastery references");
+
     // Add new armors
     CONFIG.DND5E.armorIds.leatherscale =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.5a3pOSbZ0cK1PC7T"; // UUID of item for rich sublists
@@ -354,6 +377,8 @@ Hooks.once("init", () => {
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.XNIPdFTFOI65BTdd"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.bandedmail =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.qwxcyz7PAuOD5g6m"; // UUID of item for rich sublists
+
+    console.log("ERUE D&D5E | Added new armors");
 
     // Override existing armor references
     CONFIG.DND5E.armorIds.breastplate =
@@ -380,6 +405,8 @@ Hooks.once("init", () => {
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.3LY1ZfQBwC0J9OPq"; // UUID of item for rich sublists
     CONFIG.DND5E.armorIds.studded =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.azDEdZOeMQatmWoe"; // UUID of item for rich sublists
+    
+    console.log("ERUE D&D5E | Overridden existing armor references");
 
     // Add new shields
     CONFIG.DND5E.shieldIds.buckler =
@@ -390,10 +417,14 @@ Hooks.once("init", () => {
 
     CONFIG.DND5E.shieldIds.towersheild =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.TS7XbgF7kDyuWkn3"; // UUID of item for rich sublists
+    
+    console.log("ERUE D&D5E | Added new shields");
 
     // Override existing shield references
     CONFIG.DND5E.shieldIds.shield =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-19-gear-armors.Item.WX3i3YPSopWvIM36"; // UUID of item for rich sublists
+    
+    console.log("ERUE D&D5E | Overridden existing shield references");
 
     // Add heavy shields
     // This does not work as intended, but is left here for reference
@@ -401,11 +432,15 @@ Hooks.once("init", () => {
     CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields";
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
 
+    console.log("ERUE D&D5E | Added heavy shields");
+
     // Override existing ammo references
     CONFIG.DND5E.ammoIds.arrow = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.blowgunNeedle = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.crossbowBolt = ""; // UUID of item for rich sublists
     CONFIG.DND5E.ammoIds.slingBullet = ""; // UUID of item for rich sublists
+
+    console.log("ERUE D&D5E | Overridden existing ammo references");
     
     // Add new tools
     CONFIG.DND5E.tools.appr = {
@@ -504,6 +539,8 @@ Hooks.once("init", () => {
         ability: "cha", // Ability used for tool checks
         id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ljoiJUNecYOU2Jg8", // UUID of item for rich sublists
     };
+
+    console.log("ERUE D&D5E | Added new tools");
 
     // Override existing tool references
     CONFIG.DND5E.tools.alchemist = {
@@ -651,6 +688,8 @@ Hooks.once("init", () => {
         id: "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eyTmmxEx96fgwWxn", // UUID of item for rich sublists
     };
 
+    console.log("ERUE D&D5E | Overridden existing tool references");
+
     // Add new containers
     CONFIG.DND5E.containerTypes.bandolierItem =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XSHfp4hez58ydS7B"; // UUID of item for rich sublists
@@ -686,6 +725,8 @@ Hooks.once("init", () => {
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.jT8UblmS4YG2vlZi"; // UUID of item for rich sublists
     CONFIG.DND5E.containerTypes.waterskin =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.0N2ucoivTaMtqgak"; // UUID of item for rich sublists
+
+    console.log("ERUE D&D5E | Added new containers");
 
     // Override existing container references
     CONFIG.DND5E.containerTypes.backpack =
@@ -725,6 +766,8 @@ Hooks.once("init", () => {
     CONFIG.DND5E.containerTypes.vial =
         "Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.B8E7jsMW4VWC2DPe"; // UUID of item for rich sublists
 
+    console.log("ERUE D&D5E | Overridden existing container references");
+
     // Add dunamancy spell school
     CONFIG.DND5E.spellSchools.dun = {
         label: "Dunamancy",
@@ -732,6 +775,8 @@ Hooks.once("init", () => {
         fullKey: "dunamancy", // Full key used in enrichers
         reference: "", // UUID of journal entry page for rich tooltips
     };
+
+    console.log("ERUE D&D5E | Added dunamancy spell school");
 
     /*
 
@@ -820,6 +865,9 @@ Hooks.once("init", () => {
     CONFIG.DND5E.featureTypes.superiorHuntersDefense = {
         label: "Battle Maneuver"
     };
+
+    console.log("ERUE D&D5E | Overridden class features for better categorization");
+
     */
 
     // Adds new alignment options
@@ -839,6 +887,8 @@ Hooks.once("init", () => {
     CONFIG.DND5E.alignments.ci = "Chaotic Impure";
     CONFIG.DND5E.alignments.se = "Social Evil";
     CONFIG.DND5E.alignments.re = "Rebel Evil";
+
+    console.log("ERUE D&D5E | Added new alignments");
 
     // Add new weapon properties
     CONFIG.DND5E.itemProperties.accurate = {
@@ -986,6 +1036,8 @@ Hooks.once("init", () => {
     };
     CONFIG.DND5E.validProperties.weapon.add("Wounding");
 
+    console.log("ERUE D&D5E | Added new weapon properties");
+
     // Add new material properties
     CONFIG.DND5E.itemProperties.abysium = {
         label: "Abysium",
@@ -1101,6 +1153,8 @@ Hooks.once("init", () => {
     };
     CONFIG.DND5E.validProperties.weapon.add("warpglass");
 
+    console.log("ERUE D&D5E | Added new material properties");
+
     // Modify encumbrance thresholds
     CONFIG.DND5E.encumbrance.threshold.encumbered = {
         imperial: 15,
@@ -1114,6 +1168,8 @@ Hooks.once("init", () => {
         imperial: 45,
         metric: 20.4,
     };
+
+    console.log("ERUE D&D5E | Overridden encumbrance thresholds");
 
     // Add Volume & Weight Units
     CONFIG.DND5E.volumeUnits.gallon = {
@@ -1163,6 +1219,8 @@ Hooks.once("init", () => {
         type: "imperial",
     };
 
+    console.log("ERUE D&D5E | Added new volume and weight units");
+
     // Override existing weight units
     CONFIG.DND5E.weightUnits.tn = {
         abbreviation: "tn",
@@ -1171,12 +1229,16 @@ Hooks.once("init", () => {
         type: "imperial",
     };
 
+    console.log("ERUE D&D5E | Overridden existing weight units");
+
     // Implement silver standard
     CONFIG.DND5E.currencies.cp.conversion = 100;
     CONFIG.DND5E.currencies.sp.conversion = 1;
     CONFIG.DND5E.currencies.ep.conversion = 0.02;
     CONFIG.DND5E.currencies.gp.conversion = 0.01;
     CONFIG.DND5E.currencies.pp.conversion = 0.0001;
+
+    console.log("ERUE D&D5E | Overriden currency exchange to implement silver standard");
 
     // Modify experience thresholds & levels
     CONFIG.DND5E.maxLevel = 30;
@@ -1192,6 +1254,8 @@ Hooks.once("init", () => {
         17370, 20345, 23495, 26820, 30320, 34520, 38920, 43520,
         48320, 53945, 59795, 65870, 72170, 79420, 86920,
     ];
+
+    console.log("ERUE D&D5E | Overridden experience thresholds and levels");
 
     CONFIG.DND5E.rules = {
         inspiration:
@@ -1504,4 +1568,8 @@ Hooks.once("init", () => {
         resistance:
             "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Uk3xhCTvEfx8BN1O",
     };
+
+    console.log("ERUE D&D5E | Overridden existing rule references");
+
+    console.log("ERUE D&D5E | Initialization complete");
 });
