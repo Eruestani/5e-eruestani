@@ -1689,41 +1689,53 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overridden existing weight units');
 
-	// Overhaul of currency to implement silver standard
+	// Overhaul of currency to implement silver standard in Waterdeep
 	CONFIG.DND5E.currencies = {
+		hp: {
+			label: 'Moon',
+			abbreviation: 'hm',
+			conversion: 0.00002, // 1 harbor moon per 50,000 silver shard
+			icon: 'modules/eruestani/icons/currency/harbor-moon.webp',
+		},
 		pp: {
-			label: 'Platinum',
-			abbreviation: 'pp',
-			conversion: 0.0001,
-			icon: 'systems/dnd5e/icons/currency/platinum.webp',
+			label: 'Sun',
+			abbreviation: 'ps',
+			conversion: 0.0001, // 1 platinum sun per 10,000 silver shard
+			icon: 'modules/eruestani/icons/currency/platinum-sun.webp',
+		},
+		bp: {
+			label: 'Toal',
+			abbreviation: 'bt',
+			conversion: 0.005, // 1 bronze toal per 200 silver shard
+			icon: 'modules/eruestani/icons/currency/bronze-toal.webp',
 		},
 		gp: {
-			label: 'Gold',
-			abbreviation: 'gp',
-			conversion: 0.01,
-			icon: 'systems/dnd5e/icons/currency/gold.webp',
+			label: 'Dragon',
+			abbreviation: 'gd',
+			conversion: 0.01, // 1 gold dragon per 100 silver shard
+			icon: 'modules/eruestani/icons/currency/gold-dragon.webp',
 		},
 		ep: {
-			label: 'Electrum',
-			abbreviation: 'ep',
-			conversion: 0.02,
-			icon: 'systems/dnd5e/icons/currency/electrum.webp',
+			label: 'Sambar',
+			abbreviation: 'es',
+			conversion: 0.02, // 1 electrum sambar per 50 silver shard
+			icon: 'modules/eruestani/icons/currency/electrum-sambar.webp',
 		},
 		sp: {
-			label: 'Silver',
-			abbreviation: 'sp',
-			conversion: 1,
-			icon: 'systems/dnd5e/icons/currency/silver.webp',
+			label: 'Shard',
+			abbreviation: 'ss',
+			conversion: 1, // base currency
+			icon: 'modules/eruestani/icons/currency/silver-shard.webp',
 		},
 		cp: {
-			label: 'Copper',
-			abbreviation: 'cp',
-			conversion: 100,
-			icon: 'systems/dnd5e/icons/currency/copper.webp',
+			label: 'Nib',
+			abbreviation: 'cn',
+			conversion: 100, // 100 copper nib per silver shard
+			icon: 'modules/eruestani/icons/currency/copper-nib.webp',
 		},
 	};
 
-	console.log('ERUE D&D5E | Overhaul of currency to implement silver standard');
+	console.log('ERUE D&D5E | Overhaul of currency to implement silver standard in Waterdeep');
 
 	// Modify experience thresholds & levels
 	CONFIG.DND5E.maxLevel = 30;
