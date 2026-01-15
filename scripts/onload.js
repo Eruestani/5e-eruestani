@@ -355,23 +355,38 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overhaul of creatureTypes');
 
-	// Add Weapon-Like weapon type and proficiency, with mapping
-	CONFIG.DND5E.weaponProficiencies.weaponlike = 'Weapon-Like';
-	CONFIG.DND5E.weaponProficienciesMap.weaponliketM = 'weaponlike';
-	CONFIG.DND5E.weaponProficienciesMap.weaponlikeR = 'weaponlike';
-	CONFIG.DND5E.weaponTypes.weaponlikeM = 'Weapon-Like Melee';
-	CONFIG.DND5E.weaponTypes.weaponlikeR = 'Weapon-Like Ranged';
+	// Overhaul of weaponTypes, weaponProficiencies & weaponProficienciesMap
+	CONFIG.DND5E.weaponTypes = {
+		simpleM: 'Simple Melee',
+		simpleR: 'Simple Ranged',
+		martialM: 'Martial Melee',
+		martialR: 'Martial Ranged',
+		expertM: 'Expert Melee',
+		expertR: 'Expert Ranged',
+		weaponlikeM: 'Weapon-Like Melee',
+		weaponlikeR: 'Weapon-Like Ranged',
+		natural: 'Natural',
+		improv: 'Improvised',
+		siege: 'Siege Weapon',
+	};
+	CONFIG.DND5E.weaponProficiencies = {
+		sim: 'Simple',
+		mar: 'Martial',
+		exp: 'Expert',
+		wea: 'Weapon-Like',
+	};
+	CONFIG.DND5E.weaponProficienciesMap = {
+		simpleM: 'sim',
+		simpleR: 'sim',
+		martialM: 'mar',
+		martialR: 'mar',
+		expertM: 'exp',
+		expertR: 'exp',
+		weaponlikeM: 'wea',
+		weaponlikeR: 'wea',
+	};
 
-	console.log('ERUE D&D5E | Added Weapon-Like weapon type and proficiency, with mapping');
-
-	// Add Expert Weapon weapon type and proficiency, with mapping
-	CONFIG.DND5E.weaponProficiencies.exp = 'Expert';
-	CONFIG.DND5E.weaponProficienciesMap.expertM = 'exp';
-	CONFIG.DND5E.weaponProficienciesMap.expertR = 'exp';
-	CONFIG.DND5E.weaponTypes.expertM = 'Expert Melee';
-	CONFIG.DND5E.weaponTypes.expertR = 'Expert Ranged';
-
-	console.log('ERUE D&D5E | Added Expert Weapon weapon type and proficiency, with mapping');
+	console.log('ERUE D&D5E | Overhaul of weaponProficiencies and weaponTypes');
 
 	// Override weapon mastery references
 	CONFIG.DND5E.weaponMasteries = {
