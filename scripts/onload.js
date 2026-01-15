@@ -502,253 +502,314 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overhaul of ammoIds for Comprehensive Equipment Manual');
 
-	// Add new tools
-	CONFIG.DND5E.tools.appr = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S6GTrayArdJ9S9tg',
+	// Overhaul of tools and toolIds for Comprehensive Equipment Manual
+	CONFIG.DND5E.tools = {
+		appr: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S6GTrayArdJ9S9tg',
+		},
+		birdpipes: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rGKj9vdp3pVD8Dus',
+		},
+		dartboard: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.p0o7oQTunkUuWZsC',
+		},
+		glaur: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rW5fL7t408FxteDo',
+		},
+		handdrum: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.CpNf1kg2DaUlft7t',
+		},
+		harp: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4IjQ1gW7SAMUq4vU',
+		},
+		hnefatafl: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.7sQXJP2Jzm59NXUy',
+		},
+		kubb: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.olmRJngU1Bdn4EWI',
+		},
+		longhorn: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S7lWlujDdmypB4H2',
+		},
+		ninemen: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.dqjL3RlCaKUvxcCm',
+		},
+		ringtoss: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6lsX476Oy8pL16Eo',
+		},
+		sculpter: {
+			ability: 'str',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.WTPtlnhvKpArIPTB',
+		},
+		songhorn: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.EbyA1cleMOXCAIlp',
+		},
+		surg: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tFqZN1WwHTO12L7k',
+		},
+		tantan: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZNewSFtF2CHU6K4C',
+		},
+		tattooartist: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.voV6fRbWrXO2F9A8',
+		},
+		tarokka: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.a8O6ghE5lygNkihT',
+		},
+		thelarr: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4VtMgRjJ7mWYIx1S',
+		},
+		threedragon: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.K4SqJx3os7Krmygl',
+		},
+		tocken: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.wUV4hce9A2Zke0E3',
+		},
+		trictrac: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZBDXsMMwck50f8MM',
+		},
+		wargong: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C2l7QyR7DpWwLECW',
+		},
+		yarting: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sLwuYWRBKfMeRL49',
+		},
+		zulkoon: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ljoiJUNecYOU2Jg8',
+		},
+		alchemist: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.83wDMTlZ2QFGHqHK',
+		},
+		bagpipes: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.h3b9HeQVKFynnwC5',
+		},
+		brewer: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tlsJ0DINCKWWo3uB',
+		},
+		calligrapher: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.lNAT3IDbFQGb6lyP',
+		},
+		card: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.kg8fuacsrI8q5saW',
+		},
+		carpenter: {
+			ability: 'str',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.PVez6ryjmoRy3pR6',
+		},
+		cartographer: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XMbICW1fH8Fvo0fm',
+		},
+		chess: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rhmCQX53uqle8Zj9',
+		},
+		cobbler: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.mt6xvPiFvPHlXvPc',
+		},
+		cook: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gPBt9xh80xeay7FF',
+		},
+		dice: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sqkh9Uw2v5tJtM1g',
+		},
+		disg: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.3wCYe8gHzvnHzdta',
+		},
+		drum: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.FPSsSO6Ko8I528GK',
+		},
+		dulcimer: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C16e74Omdx8BHpl9',
+		},
+		flute: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eaQJ97Eu5d9Nxq2V',
+		},
+		forg: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.fYPuRDaoCsiFLYr2',
+		},
+		glassblower: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Y8Qd8lNCQWidzH85',
+		},
+		herb: {
+			ability: 'wis',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.0uImA0a6hIqlvSRZ',
+		},
+		horn: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.I0HDwyo5TwJ4QjYh',
+		},
+		jeweler: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.AmmUERLMacP4VCoX',
+		},
+		leatherworker: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.MYvvbh4KvYURXZ2y',
+		},
+		lute: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.8GmI5BQzmoyyeaWH',
+		},
+		lyre: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.InRaLGzqtEAii0rU',
+		},
+		mason: {
+			ability: 'str',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.DaqfHwBji0ALHT3J',
+		},
+		navg: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XWxy6oLq09TU9FFY',
+		},
+		painter: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LEcS6aav9vkXRMhj',
+		},
+		panflute: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gv3fZfpRVgItlmmY',
+		},
+		pois: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.byJfvPGexI6wxWWl',
+		},
+		potter: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Qvldm2yV631DuLd1',
+		},
+		shawm: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.c4oxpQBmaZr6Ivyw',
+		},
+		smith: {
+			ability: 'str',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.axNK8fBb9lYzKQpu',
+		},
+		tinker: {
+			ability: 'int',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LJn71QPuHLg6rXYj',
+		},
+		thief: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4tjwsnHhD4MZvSrz',
+		},
+		viol: {
+			ability: 'cha',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.jymMtKZlB1m8d5mH',
+		},
+		weaver: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6gHt5bed3dRmJnnz',
+		},
+		woodcarver: {
+			ability: 'dex',
+			id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eyTmmxEx96fgwWxn',
+		},
 	};
-	CONFIG.DND5E.tools.birdpipes = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rGKj9vdp3pVD8Dus',
-	};
-	CONFIG.DND5E.tools.dartboard = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.p0o7oQTunkUuWZsC',
-	};
-	CONFIG.DND5E.tools.glaur = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rW5fL7t408FxteDo',
-	};
-	CONFIG.DND5E.tools.handdrum = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.CpNf1kg2DaUlft7t',
-	};
-	CONFIG.DND5E.tools.harp = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4IjQ1gW7SAMUq4vU',
-	};
-	CONFIG.DND5E.tools.hnefatafl = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.7sQXJP2Jzm59NXUy',
-	};
-	CONFIG.DND5E.tools.kubb = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.olmRJngU1Bdn4EWI',
-	};
-	CONFIG.DND5E.tools.longhorn = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S7lWlujDdmypB4H2',
-	};
-	CONFIG.DND5E.tools.ninemen = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.dqjL3RlCaKUvxcCm',
-	};
-	CONFIG.DND5E.tools.ringtoss = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6lsX476Oy8pL16Eo',
-	};
-	CONFIG.DND5E.tools.sculpter = {
-		ability: 'str', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.WTPtlnhvKpArIPTB',
-	};
-	CONFIG.DND5E.tools.songhorn = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.EbyA1cleMOXCAIlp',
-	};
-	CONFIG.DND5E.tools.surg = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tFqZN1WwHTO12L7k',
-	};
-	CONFIG.DND5E.tools.tantan = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZNewSFtF2CHU6K4C',
-	};
-	CONFIG.DND5E.tools.tattooartist = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.voV6fRbWrXO2F9A8',
-	};
-	CONFIG.DND5E.tools.tarokka = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.a8O6ghE5lygNkihT',
-	};
-	CONFIG.DND5E.tools.thelarr = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4VtMgRjJ7mWYIx1S',
-	};
-	CONFIG.DND5E.tools.threedragon = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.K4SqJx3os7Krmygl',
-	};
-	CONFIG.DND5E.tools.tocken = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.wUV4hce9A2Zke0E3',
-	};
-	CONFIG.DND5E.tools.trictrac = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZBDXsMMwck50f8MM',
-	};
-	CONFIG.DND5E.tools.wargong = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C2l7QyR7DpWwLECW',
-	};
-	CONFIG.DND5E.tools.yarting = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sLwuYWRBKfMeRL49',
-	};
-	CONFIG.DND5E.tools.zulkoon = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ljoiJUNecYOU2Jg8',
+	CONFIG.DND5E.toolIds = {
+		alchemist: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.83wDMTlZ2QFGHqHK',
+		appr: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S6GTrayArdJ9S9tg',
+		bagpipes: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.h3b9HeQVKFynnwC5',
+		birdpipes: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rGKj9vdp3pVD8Dus',
+		brewer: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tlsJ0DINCKWWo3uB',
+		calligrapher: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.lNAT3IDbFQGb6lyP',
+		card: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.kg8fuacsrI8q5saW',
+		carpenter: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.PVez6ryjmoRy3pR6',
+		cartographer: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XMbICW1fH8Fvo0fm',
+		chess: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rhmCQX53uqle8Zj9',
+		cobbler: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.mt6xvPiFvPHlXvPc',
+		cook: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gPBt9xh80xeay7FF',
+		dartboard: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.p0o7oQTunkUuWZsC',
+		dice: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sqkh9Uw2v5tJtM1g',
+		disg: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.3wCYe8gHzvnHzdta',
+		drum: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.FPSsSO6Ko8I528GK',
+		dulcimer: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C16e74Omdx8BHpl9',
+		flute: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eaQJ97Eu5d9Nxq2V',
+		forg: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.fYPuRDaoCsiFLYr2',
+		glassblower: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Y8Qd8lNCQWidzH85',
+		glaur: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rW5fL7t408FxteDo',
+		handdrum: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.CpNf1kg2DaUlft7t',
+		harp: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4IjQ1gW7SAMUq4vU',
+		herb: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.0uImA0a6hIqlvSRZ',
+		hnefatafl: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.7sQXJP2Jzm59NXUy',
+		horn: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.I0HDwyo5TwJ4QjYh',
+		jeweler: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.AmmUERLMacP4VCoX',
+		kubb: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.olmRJngU1Bdn4EWI',
+		leatherworker:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.MYvvbh4KvYURXZ2y',
+		longhorn: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.S7lWlujDdmypB4H2',
+		lute: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.8GmI5BQzmoyyeaWH',
+		lyre: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.InRaLGzqtEAii0rU',
+		mason: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.DaqfHwBji0ALHT3J',
+		navg: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XWxy6oLq09TU9FFY',
+		ninemen: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.dqjL3RlCaKUvxcCm',
+		panflute: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gv3fZfpRVgItlmmY',
+		painter: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LEcS6aav9vkXRMhj',
+		pois: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.byJfvPGexI6wxWWl',
+		potter: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Qvldm2yV631DuLd1',
+		ringtoss: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6lsX476Oy8pL16Eo',
+		sculpter: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.WTPtlnhvKpArIPTB',
+		shawm: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.c4oxpQBmaZr6Ivyw',
+		smith: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.axNK8fBb9lYzKQpu',
+		songhorn: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.EbyA1cleMOXCAIlp',
+		surg: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tFqZN1WwHTO12L7k',
+		tantan: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZNewSFtF2CHU6K4C',
+		tarokka: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.a8O6ghE5lygNkihT',
+		tattooartist: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.voV6fRbWrXO2F9A8',
+		thelarr: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4VtMgRjJ7mWYIx1S',
+		thief: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4tjwsnHhD4MZvSrz',
+		threedragon: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.K4SqJx3os7Krmygl',
+		tinker: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LJn71QPuHLg6rXYj',
+		tocken: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.wUV4hce9A2Zke0E3',
+		trictrac: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ZBDXsMMwck50f8MM',
+		viol: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.jymMtKZlB1m8d5mH',
+		wargong: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C2l7QyR7DpWwLECW',
+		weaver: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6gHt5bed3dRmJnnz',
+		woodcarver: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eyTmmxEx96fgwWxn',
+		yarting: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sLwuYWRBKfMeRL49',
+		zulkoon: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.ljoiJUNecYOU2Jg8',
 	};
 
-	console.log('ERUE D&D5E | Added new tools');
-
-	// Override existing tool references
-	CONFIG.DND5E.tools.alchemist = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.83wDMTlZ2QFGHqHK',
-	};
-	CONFIG.DND5E.tools.bagpipes = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.h3b9HeQVKFynnwC5',
-	};
-	CONFIG.DND5E.tools.brewer = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.tlsJ0DINCKWWo3uB',
-	};
-	CONFIG.DND5E.tools.calligrapher = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.lNAT3IDbFQGb6lyP',
-	};
-	CONFIG.DND5E.tools.card = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.kg8fuacsrI8q5saW',
-	};
-	CONFIG.DND5E.tools.carpenter = {
-		ability: 'str', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.PVez6ryjmoRy3pR6',
-	};
-	CONFIG.DND5E.tools.cartographer = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XMbICW1fH8Fvo0fm',
-	};
-	CONFIG.DND5E.tools.chess = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.rhmCQX53uqle8Zj9',
-	};
-	CONFIG.DND5E.tools.cobbler = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.mt6xvPiFvPHlXvPc',
-	};
-	CONFIG.DND5E.tools.cook = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gPBt9xh80xeay7FF',
-	};
-	CONFIG.DND5E.tools.dice = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.sqkh9Uw2v5tJtM1g',
-	};
-	CONFIG.DND5E.tools.disg = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.3wCYe8gHzvnHzdta',
-	};
-	CONFIG.DND5E.tools.drum = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.FPSsSO6Ko8I528GK',
-	};
-	CONFIG.DND5E.tools.dulcimer = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.C16e74Omdx8BHpl9',
-	};
-	CONFIG.DND5E.tools.flute = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eaQJ97Eu5d9Nxq2V',
-	};
-	CONFIG.DND5E.tools.forg = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.fYPuRDaoCsiFLYr2',
-	};
-	CONFIG.DND5E.tools.glassblower = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Y8Qd8lNCQWidzH85',
-	};
-	CONFIG.DND5E.tools.herb = {
-		ability: 'wis', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.0uImA0a6hIqlvSRZ',
-	};
-	CONFIG.DND5E.tools.horn = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.I0HDwyo5TwJ4QjYh',
-	};
-	CONFIG.DND5E.tools.jeweler = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.AmmUERLMacP4VCoX',
-	};
-	CONFIG.DND5E.tools.leatherworker = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.MYvvbh4KvYURXZ2y',
-	};
-	CONFIG.DND5E.tools.lute = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.8GmI5BQzmoyyeaWH',
-	};
-	CONFIG.DND5E.tools.lyre = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.InRaLGzqtEAii0rU',
-	};
-	CONFIG.DND5E.tools.mason = {
-		ability: 'str', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.DaqfHwBji0ALHT3J',
-	};
-	CONFIG.DND5E.tools.navg = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.XWxy6oLq09TU9FFY',
-	};
-	CONFIG.DND5E.tools.painter = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LEcS6aav9vkXRMhj',
-	};
-	CONFIG.DND5E.tools.panflute = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.gv3fZfpRVgItlmmY',
-	};
-	CONFIG.DND5E.tools.pois = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.byJfvPGexI6wxWWl',
-	};
-	CONFIG.DND5E.tools.potter = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.Qvldm2yV631DuLd1',
-	};
-	CONFIG.DND5E.tools.shawm = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.c4oxpQBmaZr6Ivyw',
-	};
-	CONFIG.DND5E.tools.smith = {
-		ability: 'str', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.axNK8fBb9lYzKQpu',
-	};
-	CONFIG.DND5E.tools.tinker = {
-		ability: 'int', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.LJn71QPuHLg6rXYj',
-	};
-	CONFIG.DND5E.tools.thief = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.4tjwsnHhD4MZvSrz',
-	};
-	CONFIG.DND5E.tools.viol = {
-		ability: 'cha', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.jymMtKZlB1m8d5mH',
-	};
-	CONFIG.DND5E.tools.weaver = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.6gHt5bed3dRmJnnz',
-	};
-	CONFIG.DND5E.tools.woodcarver = {
-		ability: 'dex', // Ability used for tool checks
-		id: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-17-gear-tools.Item.eyTmmxEx96fgwWxn',
-	};
-
-	console.log('ERUE D&D5E | Overridden existing tool references');
+	console.log('ERUE D&D5E | Overhaul of tools and toolIds for Comprehensive Equipment Manual');
 
 	// Add new containers
 	CONFIG.DND5E.containerTypes.bandolierItem =
