@@ -1246,7 +1246,7 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Added new alignments');
 
-	// Overhaul of itemProperties for Comprehensive Equipment Manual
+	// Overhaul of itemProperties and validProperties for Comprehensive Equipment Manual
 	CONFIG.DND5E.itemProperties = {
 		abysium: {
 			label: 'Abysium',
@@ -1611,7 +1611,7 @@ Hooks.once('init', () => {
 		tool: new Set(['foc', 'mgc']),
 	};
 
-	console.log('ERUE D&D5E | Overhaul of itemProperties for Comprehensive Equipment Manual');
+	console.log('ERUE D&D5E | Overhaul of itemProperties and validProperties for Comprehensive Equipment Manual');
 
 	// Modify encumbrance thresholds
 	CONFIG.DND5E.encumbrance.threshold.encumbered = {
