@@ -386,7 +386,7 @@ Hooks.once('init', () => {
 		weaponlikeR: 'wea',
 	};
 
-	console.log('ERUE D&D5E | Overhaul of weaponProficiencies and weaponTypes');
+	console.log('ERUE D&D5E | Overhaul of weaponTypes, weaponProficiencies & weaponProficienciesMap');
 
 	// Override weapon mastery references
 	CONFIG.DND5E.weaponMasteries = {
