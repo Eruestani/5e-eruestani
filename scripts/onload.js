@@ -1246,270 +1246,372 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Added new alignments');
 
-	// Add new weapon properties
-	CONFIG.DND5E.itemProperties.accurate = {
-		label: 'Accurate',
+	// Overhaul of itemProperties for Comprehensive Equipment Manual
+	CONFIG.DND5E.itemProperties = {
+		abysium: {
+			label: 'Abysium',
+			isPhysical: true,
+		},
+		ada: {
+			label: 'Adamantine',
+			isPhysical: true,
+		},
+		accurate: {
+			label: 'Accurate',
+		},
+		aerodynamic: {
+			label: 'Aerodynamic',
+		},
+		alternateB: {
+			label: 'Alternate (B)',
+		},
+		alternateP: {
+			label: 'Alternate (P)',
+		},
+		alternateS: {
+			label: 'Alternate (S)',
+		},
+		amm: {
+			label: 'Ammunition',
+		},
+		ballistic: {
+			label: 'ballistic',
+		},
+		blast: {
+			label: 'Blast',
+		},
+		breach: {
+			label: 'Breach',
+		},
+		bone: {
+			label: 'Bone',
+			isPhysical: true,
+		},
+		bronze: {
+			label: 'Bronze',
+			isPhysical: true,
+		},
+		byeshk: {
+			label: 'Byeshk',
+			isPhysical: true,
+		},
+		coldiron: {
+			label: 'Cold Iron',
+			isPhysical: true,
+		},
+		concentration: {
+			label: 'Concentration',
+			abbreviation: 'C',
+			icon: 'systems/dnd5e/icons/svg/statuses/concentrating.svg',
+			reference: 'Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ow58p27ctAnr4VPH',
+			isTag: true,
+		},
+		cruel: {
+			label: 'Cruel',
+		},
+		darkwood: {
+			label: 'Darkwood',
+			isPhysical: true,
+		},
+		djezet: {
+			label: 'Djezit',
+			isPhysical: true,
+		},
+		dragonhide: {
+			label: 'Dragonhide',
+			isPhysical: true,
+		},
+		deadly: {
+			label: 'Deadly',
+		},
+		defensive: {
+			label: 'Defensive',
+		},
+		disarming: {
+			label: 'Disarming',
+		},
+		ersatz: {
+			label: 'Ersatz',
+		},
+		fin: {
+			label: 'Finesse',
+		},
+		fine: {
+			label: 'fine',
+		},
+		fir: {
+			label: 'Firearm',
+		},
+		foc: {
+			label: 'Focus',
+		},
+		gargantuan: {
+			label: 'Gargantuan',
+		},
+		grisantianhide: {
+			label: 'Grisantian Hide',
+			isPhysical: true,
+		},
+		handgun: {
+			label: 'Handgun',
+		},
+		highcritical: {
+			label: 'High Critical',
+		},
+		hvy: {
+			label: 'Heavy',
+		},
+		huge: {
+			label: 'Huge',
+		},
+		inubrix: {
+			label: 'Inubrix',
+			isPhysical: true,
+		},
+		keepstone: {
+			label: 'Keep Stone',
+			isPhysical: true,
+		},
+		large: {
+			label: 'Large',
+		},
+		lgt: {
+			label: 'Light',
+		},
+		lod: {
+			label: 'Loading',
+		},
+		magazine: {
+			label: 'Magazine',
+		},
+		mgc: {
+			label: 'Magic',
+			isTag: true,
+		},
+		masterwork: {
+			label: 'Masterwork',
+			isPhysical: true,
+		},
+		material: {
+			label: 'Material',
+			abbreviation: 'M',
+			reference: 'Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AeH5eDS4YeM9RETC',
+		},
+		misfire: {
+			label: 'Misfire',
+		},
+		mithral: {
+			label: 'Mithral',
+			isPhysical: true,
+		},
+		natatorial: {
+			label: 'Natatorial',
+		},
+		noqual: {
+			label: 'Noqual',
+			isPhysical: true,
+		},
+		orichalcum: {
+			label: 'Orichalcum',
+			isPhysical: true,
+		},
+		peachwood: {
+			label: 'Peachwood',
+			isPhysical: true,
+		},
+		rch: {
+			label: 'Reach',
+		},
+		rel: {
+			label: 'Reload',
+		},
+		ret: {
+			label: 'Returning',
+		},
+		ritual: {
+			label: 'Ritual',
+			abbreviation: 'R',
+			icon: 'systems/dnd5e/icons/svg/items/spell.svg',
+			reference: 'Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA',
+			isTag: true,
+		},
+		sidekick: {
+			label: 'Sidekick',
+		},
+		sil: {
+			label: 'Silvered',
+			isPhysical: true,
+		},
+		sisterstone: {
+			label: 'Sisterstone',
+			isPhysical: true,
+		},
+		siccatite: {
+			label: 'Siccatite',
+			isPhysical: true,
+		},
+		somatic: {
+			label: 'Somatic',
+			abbreviation: 'S',
+			reference: 'Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.qwUNgUNilEmZkSC9',
+		},
+		spc: {
+			label: 'Special',
+		},
+		stealthDisadvantage: {
+			label: 'Stealth Disadvantage',
+		},
+		sovereignsteel: {
+			label: 'Sovereign Steel',
+			isPhysical: true,
+		},
+		thr: {
+			label: 'Thrown',
+		},
+		tiny: {
+			label: 'Tiny',
+		},
+		trait: {
+			label: 'Passive Trait',
+		},
+		tripping: {
+			label: 'Tripping',
+		},
+		two: {
+			label: 'Two-Handed',
+		},
+		unarmedB: {
+			label: 'Unarmed (B)',
+		},
+		unarmedP: {
+			label: 'Unarmed (P)',
+		},
+		unarmedS: {
+			label: 'Unarmed (S)',
+		},
+		ver: {
+			label: 'Versatile',
+		},
+		vocal: {
+			label: 'Verbal',
+			abbreviation: 'V',
+			reference: 'Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6UXTNWMCQ0nSlwwx',
+		},
+		weightlessContents: {
+			label: 'Weightless Contents',
+		},
+		warpglass: {
+			label: 'Warpglass',
+			isPhysical: true,
+		},
+		wounding: {
+			label: 'Wounding',
+		},
 	};
-	CONFIG.DND5E.validProperties.weapon.add('accurate');
 
-	CONFIG.DND5E.itemProperties.aerodynamic = {
-		label: 'Aerodynamic',
+	CONFIG.DND5E.validProperties = {
+		class: new Set(['sidekick']),
+		consumable: new Set(['mgc']),
+		container: new Set(['mgc', 'weightlessContents']),
+		equipment: new Set([
+			'foc',
+			'mgc',
+			'abysium',
+			'ada',
+			'bone',
+			'bronze',
+			'byeshk',
+			'coldiron',
+			'darkwood',
+			'djezet',
+			'dragonhide',
+			'grisantianhide',
+			'inubrix',
+			'keepstone',
+			'mithral',
+			'noqual',
+			'orichalcum',
+			'peachwood',
+			'siccatite',
+			'sisterstone',
+			'sovereignsteel',
+			'stealthDisadvantage',
+			'warpglass',
+		]),
+		feat: new Set(['mgc', 'trait']),
+		loot: new Set(['mgc']),
+		weapon: new Set([
+			'accurate',
+			'aerodynamic',
+			'alternateB',
+			'alternateP',
+			'alternateS',
+			'amm',
+			'ballistic',
+			'blast',
+			'breach',
+			'cruel',
+			'deadly',
+			'defensive',
+			'disarming',
+			'ersatz',
+			'fin',
+			'fine',
+			'fir',
+			'foc',
+			'gargantuan',
+			'handgun',
+			'hvy',
+			'highcritical',
+			'huge',
+			'large',
+			'lgt',
+			'lod',
+			'magazine',
+			'masterwork',
+			'mgc',
+			'misfire',
+			'natatorial',
+			'rch',
+			'rel',
+			'ret',
+			'sil',
+			'spc',
+			'thr',
+			'tiny',
+			'tripping',
+			'two',
+			'unarmedB',
+			'unarmedP',
+			'unarmedS',
+			'ver',
+			'wounding',
+			'abysium',
+			'ada',
+			'bone',
+			'bronze',
+			'byeshk',
+			'coldiron',
+			'darkwood',
+			'djezet',
+			'dragonhide',
+			'grisantianhide',
+			'inubrix',
+			'keepstone',
+			'mithral',
+			'noqual',
+			'orichalcum',
+			'peachwood',
+			'siccatite',
+			'sisterstone',
+			'sovereignsteel',
+			'warpglass',
+		]),
+		spell: new Set(['vocal', 'somatic', 'material', 'concentration', 'ritual']),
+		tool: new Set(['foc', 'mgc']),
 	};
-	CONFIG.DND5E.validProperties.weapon.add('aerodynamic');
 
-	CONFIG.DND5E.itemProperties.alternateB = {
-		label: 'Alternate (B)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('alternateB');
-
-	CONFIG.DND5E.itemProperties.alternateP = {
-		label: 'Alternate (P)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('alternateP');
-
-	CONFIG.DND5E.itemProperties.alternateS = {
-		label: 'Alternate (S)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('alternateS');
-
-	CONFIG.DND5E.itemProperties.ballistic = {
-		label: 'ballistic',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('ballistic');
-
-	CONFIG.DND5E.itemProperties.blast = {
-		label: 'Blast',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('blast');
-
-	CONFIG.DND5E.itemProperties.breach = {
-		label: 'Breach',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('breach');
-
-	CONFIG.DND5E.itemProperties.cruel = {
-		label: 'Cruel',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('cruel');
-
-	CONFIG.DND5E.itemProperties.deadly = {
-		label: 'Deadly',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('deadly');
-
-	CONFIG.DND5E.itemProperties.defensive = {
-		label: 'Defensive',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('defensive');
-
-	CONFIG.DND5E.itemProperties.disarming = {
-		label: 'Disarming',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('disarming');
-
-	CONFIG.DND5E.itemProperties.ersatz = {
-		label: 'Ersatz',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('ersatz');
-
-	CONFIG.DND5E.itemProperties.fine = {
-		label: 'fine',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('fine');
-
-	CONFIG.DND5E.itemProperties.gargantuan = {
-		label: 'Gargantuan',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('gargantuan');
-
-	CONFIG.DND5E.itemProperties.handgun = {
-		label: 'Handgun',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('handgun');
-
-	CONFIG.DND5E.itemProperties.highcritical = {
-		label: 'High Critical',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('highcritical');
-
-	CONFIG.DND5E.itemProperties.huge = {
-		label: 'Huge',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('huge');
-
-	CONFIG.DND5E.itemProperties.large = {
-		label: 'Large',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('large');
-
-	CONFIG.DND5E.itemProperties.magazine = {
-		label: 'Magazine',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('magazine');
-
-	CONFIG.DND5E.itemProperties.masterwork = {
-		label: 'Masterwork',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('masterwork');
-
-	CONFIG.DND5E.itemProperties.misfire = {
-		label: 'Misfire',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('misfire');
-
-	CONFIG.DND5E.itemProperties.natatorial = {
-		label: 'Natatorial',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('natatorial');
-
-	CONFIG.DND5E.itemProperties.tiny = {
-		label: 'Tiny',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('tiny');
-
-	CONFIG.DND5E.itemProperties.tripping = {
-		label: 'Tripping',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('tripping');
-
-	CONFIG.DND5E.itemProperties.unarmedB = {
-		label: 'Unarmed (B)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('unarmedB');
-
-	CONFIG.DND5E.itemProperties.unarmedP = {
-		label: 'Unarmed (P)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('unarmedP');
-
-	CONFIG.DND5E.itemProperties.unarmedS = {
-		label: 'Unarmed (S)',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('unarmedS');
-
-	CONFIG.DND5E.itemProperties.Wounding = {
-		label: 'Wounding',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('Wounding');
-
-	console.log('ERUE D&D5E | Added new weapon properties');
-
-	// Add new material properties
-	CONFIG.DND5E.itemProperties.abysium = {
-		label: 'Abysium',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('abysium');
-
-	CONFIG.DND5E.itemProperties.bone = {
-		label: 'Bone',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('bone');
-
-	CONFIG.DND5E.itemProperties.byeshk = {
-		label: 'Byeshk',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('byeshk');
-
-	CONFIG.DND5E.itemProperties.bronze = {
-		label: 'Bronze',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('bronze');
-
-	CONFIG.DND5E.itemProperties.coldiron = {
-		label: 'Cold Iron',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('coldiron');
-
-	CONFIG.DND5E.itemProperties.darkwood = {
-		label: 'Darkwood',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('darkwood');
-
-	CONFIG.DND5E.itemProperties.djezet = {
-		label: 'Djezit',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('djezet');
-
-	CONFIG.DND5E.itemProperties.dragonhide = {
-		label: 'Dragonhide',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('dragonhide');
-
-	CONFIG.DND5E.itemProperties.grisantianhide = {
-		label: 'Grisantian Hide',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('grisantianhide');
-
-	CONFIG.DND5E.itemProperties.inubrix = {
-		label: 'Inubrix',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('inubrix');
-
-	CONFIG.DND5E.itemProperties.keepstone = {
-		label: 'Keep Stone',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('keepstone');
-
-	CONFIG.DND5E.itemProperties.mithral = {
-		label: 'Mithral',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('mithral');
-
-	CONFIG.DND5E.itemProperties.noqual = {
-		label: 'Noqual',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('noqual');
-
-	CONFIG.DND5E.itemProperties.orichalcum = {
-		label: 'Orichalcum',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('orichalcum');
-
-	CONFIG.DND5E.itemProperties.peachwood = {
-		label: 'Peachwood',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('peachwood');
-
-	CONFIG.DND5E.itemProperties.siccatite = {
-		label: 'Siccatite',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('siccatite');
-
-	CONFIG.DND5E.itemProperties.sisterstone = {
-		label: 'Sisterstone',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('sisterstone');
-
-	CONFIG.DND5E.itemProperties.sovereignsteel = {
-		label: 'Sovereign Steel',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('sovereignsteel');
-
-	CONFIG.DND5E.itemProperties.warpglass = {
-		label: 'Warpglass',
-		isPhysical: 'true',
-	};
-	CONFIG.DND5E.validProperties.weapon.add('warpglass');
-
-	console.log('ERUE D&D5E | Added new material properties');
+	console.log('ERUE D&D5E | Overhaul of itemProperties for Comprehensive Equipment Manual');
 
 	// Modify encumbrance thresholds
 	CONFIG.DND5E.encumbrance.threshold.encumbered = {
