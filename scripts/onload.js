@@ -493,7 +493,7 @@ Hooks.once('init', () => {
     CONFIG.DND5E.armorTypes.shieldH = "Heavy Shield";
     CONFIG.DND5E.armorProficiencies.shlH = "Heavy Shields";
     CONFIG.DND5E.armorProficienciesMap.shieldH = "shlH";
-    CONFIG.DND5E.equipmentTypes.shieldH = "shlH" =
+    CONFIG.DND5E.equipmentTypes.shieldH = "shlH";
 
     console.log("ERUE D&D5E | Added Heavy Shields armor type and proficiency, with mapping");
 
