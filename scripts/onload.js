@@ -1,116 +1,249 @@
 Hooks.once('init', () => {
 	console.log('ERUE D&D5E | Initializing ERUE D&D5E modifications');
 
-	// Override ability references
-	CONFIG.DND5E.abilities.str.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH'; // UUID of journal entry page for rich tooltips
-	CONFIG.DND5E.abilities.dex.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ'; // UUID of journal entry page for rich tooltips
-	CONFIG.DND5E.abilities.con.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7'; // UUID of journal entry page for rich tooltips
-	CONFIG.DND5E.abilities.int.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF'; // UUID of journal entry page for rich tooltips
-	CONFIG.DND5E.abilities.wis.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s'; // UUID of journal entry page for rich tooltips
-	CONFIG.DND5E.abilities.cha.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG'; // UUID of journal entry page for rich tooltips
-
-	console.log('ERUE D&D5E | Overridden existing ability references.');
-
-	// Add new skills
-	CONFIG.DND5E.skills.clt = {
-		label: 'Culture',
-		ability: 'int',
-		fullKey: 'culture', // Full key used in enrichers
-		reference:
-			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MlO8L4tix1kde6W2', // UUID of journal entry page for rich tooltips
-		icon: 'systems/dnd5e/icons/svg/items/feature.svg', // Icon used in favorites on new character sheet
+	// Overhaul of abilities
+	CONFIG.DND5E.abilities = {
+		str: {
+			label: 'Strength',
+			abbreviation: 'str',
+			type: 'physical',
+			fullKey: 'strength',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.nUPv6C66Ur64BIUH',
+			icon: 'systems/dnd5e/icons/svg/abilities/strength.svg',
+		},
+		dex: {
+			label: 'Dexterity',
+			abbreviation: 'dex',
+			type: 'physical',
+			fullKey: 'dexterity',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ER8CKDUWLsFXuARJ',
+			icon: 'systems/dnd5e/icons/svg/abilities/dexterity.svg',
+		},
+		con: {
+			label: 'Constitution',
+			abbreviation: 'con',
+			type: 'physical',
+			fullKey: 'constitution',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MpA4jnwD17Q0RPg7',
+			icon: 'systems/dnd5e/icons/svg/abilities/constitution.svg',
+		},
+		int: {
+			label: 'Intelligence',
+			abbreviation: 'int',
+			type: 'mental',
+			fullKey: 'intelligence',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.WzWWcTIppki35YvF',
+			icon: 'systems/dnd5e/icons/svg/abilities/intelligence.svg',
+			defaults: {
+				vehicle: 0,
+			},
+		},
+		wis: {
+			label: 'Wisdom',
+			abbreviation: 'wis',
+			type: 'mental',
+			fullKey: 'wisdom',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.v3IPyTtqvXqN934s',
+			icon: 'systems/dnd5e/icons/svg/abilities/wisdom.svg',
+			defaults: {
+				vehicle: 0,
+			},
+		},
+		cha: {
+			label: 'Charisma',
+			abbreviation: 'cha',
+			type: 'mental',
+			fullKey: 'charisma',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.9FyghudYFV5QJOuG',
+			icon: 'systems/dnd5e/icons/svg/abilities/charisma.svg',
+			defaults: {
+				vehicle: 0,
+			},
+		},
+		hon: {
+			label: 'Honor',
+			abbreviation: 'hon',
+			type: 'mental',
+			fullKey: 'honor',
+			defaults: { npc: 'cha', vehicle: 0 },
+			improvement: false,
+		},
+		san: {
+			label: 'Sannity',
+			abbreviation: 'san',
+			type: 'mental',
+			fullKey: 'sanity',
+			defaults: { npc: 'wis', vehicle: 0 },
+			improvement: false,
+		},
 	};
-	CONFIG.DND5E.skills.eng = {
-		label: 'Engineering',
-		ability: 'int',
-		fullKey: 'engineering', // Full key used in enrichers
-		reference:
-			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.HPZRA9QUiBm8DaCr', // UUID of journal entry page for rich tooltips
-		icon: 'systems/dnd5e/icons/svg/items/feature.svg', // Icon used in favorites on new character sheet
-	};
 
-	console.log('ERUE D&D5E | Added new skills');
+	console.log('ERUE D&D5E | Overhaul of abilities');
 
 	// Override skill references
-	CONFIG.DND5E.skills.acr.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.AvvBLEHNl7kuwPkN';
-	CONFIG.DND5E.skills.acr.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
+	CONFIG.DND5E.skills = {
+		acr: {
+			label: 'Acrobatics',
+			ability: 'dex',
+			fullKey: 'acrobatics',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AvvBLEHNl7kuwPkN',
+			icon: 'icons/equipment/feet/shoes-simple-leaf-green.webp',
+		},
+		ani: {
+			label: 'Animal Handling',
+			ability: 'wis',
+			fullKey: 'animalHandling',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xb3MCjUvopOU4viE',
+			icon: 'icons/environment/creatures/horse-brown.webp',
+		},
+		arc: {
+			label: 'Arcana',
+			ability: 'int',
+			fullKey: 'arcana',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.h3bYSPge8IOqne1N',
+			icon: 'icons/sundries/books/book-embossed-jewel-silver-green.webp',
+		},
+		ath: {
+			label: 'Athletics',
+			ability: 'str',
+			fullKey: 'athletics',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rIR7ttYDUpH3tMzv',
+			icon: 'icons/magic/control/buff-strength-muscle-damage-orange.webp',
+		},
+		clt: {
+			label: 'Culture',
+			ability: 'int',
+			fullKey: 'culture',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.MlO8L4tix1kde6W2',
+			icon: 'systems/dnd5e/icons/svg/items/feature.svg',
+		},
+		dec: {
+			label: 'Deception',
+			ability: 'cha',
+			fullKey: 'deception',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.mqVZ2fz0L7a9VeKJ',
+			icon: 'icons/magic/control/mouth-smile-deception-purple.webp',
+		},
+		eng: {
+			label: 'Engineering',
+			ability: 'int',
+			fullKey: 'engineering',
+			reference:
+				'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.HPZRA9QUiBm8DaCr',
+			icon: 'systems/dnd5e/icons/svg/items/feature.svg',
+		},
+		his: {
+			label: 'History',
+			ability: 'int',
+			fullKey: 'history',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kRBZbdWMGW9K3wdY',
+			icon: 'icons/sundries/books/book-embossed-bound-brown.webp',
+		},
+		ins: {
+			label: 'Insight',
+			ability: 'wis',
+			fullKey: 'insight',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8R5SMbAGbECNgO8z',
+			icon: 'icons/magic/perception/orb-crystal-ball-scrying-blue.webp',
+		},
+		itm: {
+			label: 'Intimidation',
+			ability: 'cha',
+			fullKey: 'intimidation',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4VHHI2gJ1jEsppfg',
+			icon: 'icons/skills/social/intimidation-impressing.webp',
+		},
+		inv: {
+			label: 'Investigation',
+			ability: 'int',
+			fullKey: 'investigation',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y7nmbQAruWOs7WRM',
+			icon: 'icons/tools/scribal/magnifying-glass.webp',
+		},
+		med: {
+			label: 'Medicine',
+			ability: 'wis',
+			fullKey: 'medicine',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GeYmM7BVfSCAga4o',
+			icon: 'icons/tools/cooking/mortar-herbs-yellow.webp',
+		},
+		nat: {
+			label: 'Nature',
+			ability: 'int',
+			fullKey: 'nature',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ueMx3uF2PQlcye31',
+			icon: 'icons/magic/nature/plant-sprout-snow-green.webp',
+		},
+		prc: {
+			label: 'Perception',
+			ability: 'wis',
+			fullKey: 'perception',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zjEeHCUqfuprfzhY',
+			icon: 'icons/magic/perception/eye-ringed-green.webp',
+			pace: {
+				advantage: {},
+				disadvantage: {},
+			},
+		},
+		prf: {
+			label: 'Performance',
+			ability: 'cha',
+			fullKey: 'performance',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hYT7Z06yDNBcMtGe',
+			icon: 'icons/tools/instruments/lute-gold-brown.webp',
+		},
+		per: {
+			label: 'Persuasion',
+			ability: 'cha',
+			fullKey: 'persuasion',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4R5H8iIsdFQTsj3X',
+			icon: 'icons/skills/social/diplomacy-handshake.webp',
+		},
+		rel: {
+			label: 'Religion',
+			ability: 'int',
+			fullKey: 'religion',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.CXVzERHdP4qLhJXM',
+			icon: 'icons/magic/holy/saint-glass-portrait-halo.webp',
+		},
+		slt: {
+			label: 'Sleight of Hand',
+			ability: 'dex',
+			fullKey: 'sleightOfHand',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.yg6SRpGNVz9nDW0A',
+			icon: 'icons/sundries/gaming/playing-cards.webp',
+		},
+		ste: {
+			label: 'Stealth',
+			ability: 'dex',
+			fullKey: 'stealth',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4MfrpERNiQXmvgCI',
+			icon: 'icons/magic/perception/shadow-stealth-eyes-purple.webp',
+			pace: {
+				disadvantage: {},
+			},
+		},
+		sur: {
+			label: 'Survival',
+			ability: 'wis',
+			fullKey: 'survival',
+			reference: 'Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t3EzDU5b9BVAIEVi',
+			icon: 'icons/magic/fire/flame-burning-campfire-yellow-blue.webp',
+			pace: {
+				advantage: {},
+				disadvantage: {},
+			},
+		},
+	};
 
-	CONFIG.DND5E.skills.ani.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.xb3MCjUvopOU4viE';
-	CONFIG.DND5E.skills.ani.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.arc.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.h3bYSPge8IOqne1N';
-	CONFIG.DND5E.skills.arc.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.ath.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.rIR7ttYDUpH3tMzv';
-	CONFIG.DND5E.skills.ath.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.dec.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.mqVZ2fz0L7a9VeKJ';
-	CONFIG.DND5E.skills.dec.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.his.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.kRBZbdWMGW9K3wdY';
-	CONFIG.DND5E.skills.his.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.ins.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.8R5SMbAGbECNgO8z';
-	CONFIG.DND5E.skills.ins.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.itm.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4VHHI2gJ1jEsppfg';
-	CONFIG.DND5E.skills.itm.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.inv.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.Y7nmbQAruWOs7WRM';
-	CONFIG.DND5E.skills.inv.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.med.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.GeYmM7BVfSCAga4o';
-	CONFIG.DND5E.skills.med.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.nat.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.ueMx3uF2PQlcye31';
-	CONFIG.DND5E.skills.nat.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.prc.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.zjEeHCUqfuprfzhY';
-	CONFIG.DND5E.skills.prc.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.prf.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.hYT7Z06yDNBcMtGe';
-	CONFIG.DND5E.skills.prf.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.per.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4R5H8iIsdFQTsj3X';
-	CONFIG.DND5E.skills.per.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.rel.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.CXVzERHdP4qLhJXM';
-	CONFIG.DND5E.skills.rel.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.slt.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.yg6SRpGNVz9nDW0A';
-	CONFIG.DND5E.skills.slt.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.ste.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.4MfrpERNiQXmvgCI';
-	CONFIG.DND5E.skills.ste.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	CONFIG.DND5E.skills.sur.reference =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.journalentry-2-rules.JournalEntry.O0EPv7iRlMzmarzW.JournalEntryPage.t3EzDU5b9BVAIEVi';
-	CONFIG.DND5E.skills.sur.icon = 'systems/dnd5e/icons/svg/items/feature.svg';
-
-	console.log('ERUE D&D5E | Overridden existing skill references');
+	console.log('ERUE D&D5E | Overhaul of skills');
 
 	// Overhaul of creatureTypes
 	CONFIG.DND5E.creatureTypes = {
