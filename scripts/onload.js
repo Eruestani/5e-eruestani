@@ -811,83 +811,59 @@ Hooks.once('init', () => {
 
 	console.log('ERUE D&D5E | Overhaul of tools and toolIds for Comprehensive Equipment Manual');
 
-	// Add new containers
-	CONFIG.DND5E.containerTypes.bandolierItem =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XSHfp4hez58ydS7B';
-	CONFIG.DND5E.containerTypes.bandolierPotion =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.DMPlHu151Qs2Q0eS';
-	CONFIG.DND5E.containerTypes.barrelDry =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.2Vu1Ekz0dJDI2WzS';
-	CONFIG.DND5E.containerTypes.box =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.8g3u8NjB0j4BHx5a';
-	CONFIG.DND5E.containerTypes.boxScroll =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.f5YcSV0ZFZZ7BOxL';
-	CONFIG.DND5E.containerTypes.cask =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.dZG1629G6ZMKdS2v';
-	CONFIG.DND5E.containerTypes.compartment =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.NoX8QR1xNS96vA9m';
-	CONFIG.DND5E.containerTypes.crate =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.oIkvDIEuLW1zHRb2';
-	CONFIG.DND5E.containerTypes.haversack =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.OA2l9Wa2GbMBUdE3';
-	CONFIG.DND5E.containerTypes.keg =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.c3PUrOxzQV2qVMCI';
-	CONFIG.DND5E.containerTypes.ketch =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.agZgHMrFwU9pmy9k';
-	CONFIG.DND5E.containerTypes.lockbox =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XoRSNKxCRgOpz9Bs';
-	CONFIG.DND5E.containerTypes.rucksack =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3OWlZKEs3pZPXPaR';
-	CONFIG.DND5E.containerTypes.sackLarge =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.zXzmannRavel5W4U';
-	CONFIG.DND5E.containerTypes.satchel =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.Aq8xwUtSYj8m3Ll9';
-	CONFIG.DND5E.containerTypes.satchelWaterproof =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.jT8UblmS4YG2vlZi';
-	CONFIG.DND5E.containerTypes.waterskin =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.0N2ucoivTaMtqgak';
+	// Overhaul of containerTypes for Comprehensive Equipment Manual
+	CONFIG.DND5E.containerTypes = {
+		backpack:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.krLHFroJOTD2ZiIh',
+		bandolierItem:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XSHfp4hez58ydS7B',
+		bandolierPotion:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.DMPlHu151Qs2Q0eS',
+		barrel: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.yD8flEHT95mchukr',
+		barrelDry:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.2Vu1Ekz0dJDI2WzS',
+		basket: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.pwPfz3jpDeZTvmGs',
+		boltcase:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.gaZPKIs4yVk5DTGp',
+		bottle: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.e9q4WvuHroflqWp3',
+		box: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.8g3u8NjB0j4BHx5a',
+		boxScroll:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.f5YcSV0ZFZZ7BOxL',
+		bucket: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.JIPsKZMMgkvPR3ji',
+		cask: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.dZG1629G6ZMKdS2v',
+		case: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3lFNgZKQpB79511C',
+		chest: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kfYQaxxH9PuAiTac',
+		compartment:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.NoX8QR1xNS96vA9m',
+		crate: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.oIkvDIEuLW1zHRb2',
+		flask: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.KaqUtM8qSKjrOIVO',
+		haversack:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.OA2l9Wa2GbMBUdE3',
+		jug: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kQuOf3BBXgFjRmug',
+		keg: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.c3PUrOxzQV2qVMCI',
+		ketch: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.agZgHMrFwU9pmy9k',
+		lockbox: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.XoRSNKxCRgOpz9Bs',
+		pitcher: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.43dCcx3Xzmb1ZAMk',
+		pot: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.tiWy2PdmeVX26brH',
+		pouch: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.FAj1CjxkMOU4XgjL',
+		quiver: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.EAie6KgWyNVCO3hV',
+		rucksack:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3OWlZKEs3pZPXPaR',
+		sack: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.lBXVMf1wGUyswcPR',
+		sackLarge:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.zXzmannRavel5W4U',
+		saddlebags:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.BWOXbnggziUvVPU6',
+		satchel: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.Aq8xwUtSYj8m3Ll9',
+		satchelWaterproof:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.jT8UblmS4YG2vlZi',
+		tankard: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.eDMnB91tAzpnJAfx',
+		vial: 'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.B8E7jsMW4VWC2DPe',
+		waterskin:
+			'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.0N2ucoivTaMtqgak',
+	};
 
-	console.log('ERUE D&D5E | Added new containers');
-
-	// Override existing container references
-	CONFIG.DND5E.containerTypes.backpack =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.krLHFroJOTD2ZiIh';
-	CONFIG.DND5E.containerTypes.barrel =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.yD8flEHT95mchukr';
-	CONFIG.DND5E.containerTypes.basket =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.pwPfz3jpDeZTvmGs';
-	CONFIG.DND5E.containerTypes.boltcase =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.gaZPKIs4yVk5DTGp';
-	CONFIG.DND5E.containerTypes.bottle =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.e9q4WvuHroflqWp3';
-	CONFIG.DND5E.containerTypes.bucket =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.JIPsKZMMgkvPR3ji';
-	CONFIG.DND5E.containerTypes.case =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.3lFNgZKQpB79511C';
-	CONFIG.DND5E.containerTypes.chest =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kfYQaxxH9PuAiTac';
-	CONFIG.DND5E.containerTypes.flask =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.KaqUtM8qSKjrOIVO';
-	CONFIG.DND5E.containerTypes.jug =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.kQuOf3BBXgFjRmug';
-	CONFIG.DND5E.containerTypes.pitcher =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.43dCcx3Xzmb1ZAMk';
-	CONFIG.DND5E.containerTypes.pot =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.tiWy2PdmeVX26brH';
-	CONFIG.DND5E.containerTypes.pouch =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.FAj1CjxkMOU4XgjL';
-	CONFIG.DND5E.containerTypes.quiver =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.EAie6KgWyNVCO3hV';
-	CONFIG.DND5E.containerTypes.sack =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.lBXVMf1wGUyswcPR';
-	CONFIG.DND5E.containerTypes.saddlebags =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.BWOXbnggziUvVPU6';
-	CONFIG.DND5E.containerTypes.tankard =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.eDMnB91tAzpnJAfx';
-	CONFIG.DND5E.containerTypes.vial =
-		'Compendium.forge-vtt-shared-compendiums-erue-d-and-d5e.item-10-gear-containers.Item.B8E7jsMW4VWC2DPe';
-
-	console.log('ERUE D&D5E | Overridden existing container references');
+	console.log('ERUE D&D5E | Overhaul of containerTypes for Comprehensive Equipment Manual');
 
 	// Add dunamancy spell school
 	CONFIG.DND5E.spellSchools.dun = {
